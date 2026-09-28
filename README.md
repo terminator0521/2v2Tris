@@ -1,1 +1,1 @@
-# T-Tris
+# 2v2Tris
