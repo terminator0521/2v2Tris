@@ -1,28 +1,28 @@
-﻿using Raylib_cs;
-using RayGui_cs;
+﻿using RayGui_cs;
 
 namespace TwoVTwoTris.Core.Pages
 {
-    internal class TestPage : IPage
+    internal class TestPage : Page
     {
-        
 
-        public void Update()
+
+        override internal void Update()
+        {
+            //always GetInput() for internal input manager
+        }
+        override internal void Render()
         {
 
         }
-        public void Render()
-        {
-            
-        }
-        public void UI()
+        override internal void UI()
         {
             GuiStyle.Set(GuiDefaultProperty.TextSize, 40);
             Gui.Label(new(200, 200, 600, 200), "hello world");
         }
-        public IPage SetNextPage()
+
+        override internal Page SetNextPage()
         {
-                return null;
+            return null;
         }
 
     }

@@ -29,3 +29,20 @@ C:\Users\Ricky Xu\Desktop\Projects\2v2Tris\TwoVTwoTris.Core\obj\Debug\net10.0\Tw
 C:\Users\Ricky Xu\Desktop\Projects\2v2Tris\TwoVTwoTris.Core\bin\Debug\net10.0\raygui.dll
 C:\Users\Ricky Xu\Desktop\Projects\2v2Tris\TwoVTwoTris.Core\bin\Debug\net10.0\Raygui-cs.dll
 C:\Users\Ricky Xu\Desktop\Projects\2v2Tris\TwoVTwoTris.Core\bin\Debug\net10.0\Raygui-cs.pdb
+C:\Users\User\Desktop\Projects\2v2Tris\TwoVTwoTris.Core\bin\Debug\net10.0\raygui.dll
+C:\Users\User\Desktop\Projects\2v2Tris\TwoVTwoTris.Core\bin\Debug\net10.0\TwoVTwoTris.Core.deps.json
+C:\Users\User\Desktop\Projects\2v2Tris\TwoVTwoTris.Core\bin\Debug\net10.0\TwoVTwoTris.Core.dll
+C:\Users\User\Desktop\Projects\2v2Tris\TwoVTwoTris.Core\bin\Debug\net10.0\TwoVTwoTris.Core.pdb
+C:\Users\User\Desktop\Projects\2v2Tris\TwoVTwoTris.Core\bin\Debug\net10.0\Raygui-cs.dll
+C:\Users\User\Desktop\Projects\2v2Tris\TwoVTwoTris.Core\bin\Debug\net10.0\Raygui-cs.pdb
+C:\Users\User\Desktop\Projects\2v2Tris\TwoVTwoTris.Core\obj\Debug\net10.0\TwoVTwoTris.Core.csproj.AssemblyReference.cache
+C:\Users\User\Desktop\Projects\2v2Tris\TwoVTwoTris.Core\obj\Debug\net10.0\TwoVTwoTris.Core.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\User\Desktop\Projects\2v2Tris\TwoVTwoTris.Core\obj\Debug\net10.0\TwoVTwoTris.Core.AssemblyInfoInputs.cache
+C:\Users\User\Desktop\Projects\2v2Tris\TwoVTwoTris.Core\obj\Debug\net10.0\TwoVTwoTris.Core.AssemblyInfo.cs
+C:\Users\User\Desktop\Projects\2v2Tris\TwoVTwoTris.Core\obj\Debug\net10.0\TwoVTwoTris.Core.csproj.CoreCompileInputs.cache
+C:\Users\User\Desktop\Projects\2v2Tris\TwoVTwoTris.Core\obj\Debug\net10.0\TwoVTwoTris.Core.sourcelink.json
+C:\Users\User\Desktop\Projects\2v2Tris\TwoVTwoTris.Core\obj\Debug\net10.0\TwoVTwoT.39589EDB.Up2Date
+C:\Users\User\Desktop\Projects\2v2Tris\TwoVTwoTris.Core\obj\Debug\net10.0\TwoVTwoTris.Core.dll
+C:\Users\User\Desktop\Projects\2v2Tris\TwoVTwoTris.Core\obj\Debug\net10.0\refint\TwoVTwoTris.Core.dll
+C:\Users\User\Desktop\Projects\2v2Tris\TwoVTwoTris.Core\obj\Debug\net10.0\TwoVTwoTris.Core.pdb
+C:\Users\User\Desktop\Projects\2v2Tris\TwoVTwoTris.Core\obj\Debug\net10.0\ref\TwoVTwoTris.Core.dll
