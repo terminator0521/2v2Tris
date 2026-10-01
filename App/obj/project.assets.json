@@ -2,6 +2,32 @@
   "version": 4,
   "targets": {
     "net10.0": {
+      "Newtonsoft.Json/13.0.3": {
+        "type": "package",
+        "compile": {
+          "lib/net6.0/Newtonsoft.Json.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/Newtonsoft.Json.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "RayGUI-cs/2.0.5": {
+        "type": "package",
+        "dependencies": {
+          "Newtonsoft.Json": "13.0.3",
+          "Raylib-cs": "7.0.1"
+        },
+        "compile": {
+          "lib/net9.0/RayGUI_cs.dll": {}
+        },
+        "runtime": {
+          "lib/net9.0/RayGUI_cs.dll": {}
+        }
+      },
       "Raylib-cs/8.1.0": {
         "type": "package",
         "compile": {
@@ -44,19 +70,68 @@
           }
         }
       },
-      "Core/1.0.0": {
+      "TwoVTwoTris.Core/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v10.0",
+        "dependencies": {
+          "RayGUI-cs": "2.0.5",
+          "Raylib-cs": "8.1.0"
+        },
         "compile": {
-          "bin/placeholder/Core.dll": {}
+          "bin/placeholder/TwoVTwoTris.Core.dll": {}
         },
         "runtime": {
-          "bin/placeholder/Core.dll": {}
+          "bin/placeholder/TwoVTwoTris.Core.dll": {}
         }
       }
     }
   },
   "libraries": {
+    "Newtonsoft.Json/13.0.3": {
+      "sha512": "HrC5BXdl00IP9zeV+0Z848QWPAoCr9P3bDEZguI+gkLcBKAOxix/tLEAAHC+UvDNPv4a2d18lOReHMOagPa+zQ==",
+      "type": "package",
+      "path": "newtonsoft.json/13.0.3",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.md",
+        "README.md",
+        "lib/net20/Newtonsoft.Json.dll",
+        "lib/net20/Newtonsoft.Json.xml",
+        "lib/net35/Newtonsoft.Json.dll",
+        "lib/net35/Newtonsoft.Json.xml",
+        "lib/net40/Newtonsoft.Json.dll",
+        "lib/net40/Newtonsoft.Json.xml",
+        "lib/net45/Newtonsoft.Json.dll",
+        "lib/net45/Newtonsoft.Json.xml",
+        "lib/net6.0/Newtonsoft.Json.dll",
+        "lib/net6.0/Newtonsoft.Json.xml",
+        "lib/netstandard1.0/Newtonsoft.Json.dll",
+        "lib/netstandard1.0/Newtonsoft.Json.xml",
+        "lib/netstandard1.3/Newtonsoft.Json.dll",
+        "lib/netstandard1.3/Newtonsoft.Json.xml",
+        "lib/netstandard2.0/Newtonsoft.Json.dll",
+        "lib/netstandard2.0/Newtonsoft.Json.xml",
+        "newtonsoft.json.13.0.3.nupkg.sha512",
+        "newtonsoft.json.nuspec",
+        "packageIcon.png"
+      ]
+    },
+    "RayGUI-cs/2.0.5": {
+      "sha512": "zKeLfFf+s42KtaXntBuj54HpchiNoah22RPdpUAN7ug0iE60LmtpuqDe7JpUAAEevPW65eAMOlMQURws3EvjVw==",
+      "type": "package",
+      "path": "raygui-cs/2.0.5",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE",
+        "README.md",
+        "lib/net9.0/RayGUI_cs.dll",
+        "raygui-cs.2.0.5.nupkg.sha512",
+        "raygui-cs.nuspec",
+        "raygui_128x128.png"
+      ]
+    },
     "Raylib-cs/8.1.0": {
       "sha512": "5BH1IoueW/47PjykoD5rHSQGkfG/0ROdv1Lj/LiJ+m/KBmDAmDRyXRpgS/qOZL6ScIMtnY5nG31dQ58y/VVXUg==",
       "type": "package",
@@ -81,16 +156,16 @@
         "runtimes/win-x86/native/raylib.dll"
       ]
     },
-    "Core/1.0.0": {
+    "TwoVTwoTris.Core/1.0.0": {
       "type": "project",
-      "path": "../Core/Core.csproj",
-      "msbuildProject": "../Core/Core.csproj"
+      "path": "../Core/TwoVTwoTris.Core.csproj",
+      "msbuildProject": "../Core/TwoVTwoTris.Core.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net10.0": [
-      "Core >= 1.0.0",
-      "Raylib-cs >= 8.1.0"
+      "Raylib-cs >= 8.1.0",
+      "TwoVTwoTris.Core >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -100,9 +175,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\User\\Desktop\\Projects\\2v2Tris\\App\\App.csproj",
-      "projectName": "App",
-      "projectPath": "C:\\Users\\User\\Desktop\\Projects\\2v2Tris\\App\\App.csproj",
+      "projectUniqueName": "C:\\Users\\User\\Desktop\\Projects\\2v2Tris\\App\\TwoVTwoTris.Desktop.csproj",
+      "projectName": "TwoVTwoTris.Desktop",
+      "projectPath": "C:\\Users\\User\\Desktop\\Projects\\2v2Tris\\App\\TwoVTwoTris.Desktop.csproj",
       "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\User\\Desktop\\Projects\\2v2Tris\\App\\obj\\",
       "projectStyle": "PackageReference",
@@ -127,8 +202,8 @@
           "framework": "net10.0",
           "targetAlias": "net10.0",
           "projectReferences": {
-            "C:\\Users\\User\\Desktop\\Projects\\2v2Tris\\Core\\Core.csproj": {
-              "projectPath": "C:\\Users\\User\\Desktop\\Projects\\2v2Tris\\Core\\Core.csproj"
+            "C:\\Users\\User\\Desktop\\Projects\\2v2Tris\\Core\\TwoVTwoTris.Core.csproj": {
+              "projectPath": "C:\\Users\\User\\Desktop\\Projects\\2v2Tris\\Core\\TwoVTwoTris.Core.csproj"
             }
           }
         }

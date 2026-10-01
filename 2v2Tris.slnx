@@ -1,5 +1,4 @@
 <Solution>
-  <Project Path="2v2Tris.csproj" />
-  <Project Path="App/App.csproj" Id="6da417aa-808b-474a-806e-a8f277ca9c9c" />
-  <Project Path="Core/Core.csproj" Id="a820f2a6-fbac-4cf8-83b7-39d4a896137c" />
+  <Project Path="App/TwoVTwoTris.Desktop.csproj" />
+  <Project Path="Core/TwoVTwoTris.Core.csproj" />
 </Solution>

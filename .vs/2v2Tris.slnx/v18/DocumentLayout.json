@@ -1,0 +1,54 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\User\\Desktop\\Projects\\2v2Tris\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{EC69693E-A219-68F9-05C6-F5C8A7109C05}|Core\\TwoVTwoTris.Core.csproj|c:\\users\\user\\desktop\\projects\\2v2tris\\core\\game.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EC69693E-A219-68F9-05C6-F5C8A7109C05}|Core\\TwoVTwoTris.Core.csproj|solutionrelative:core\\game.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7DF2720F-879F-CB02-3344-F9ED761BFAFD}|App\\TwoVTwoTris.Desktop.csproj|c:\\users\\user\\desktop\\projects\\2v2tris\\app\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7DF2720F-879F-CB02-3344-F9ED761BFAFD}|App\\TwoVTwoTris.Desktop.csproj|solutionrelative:app\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\Projects\\2v2Tris\\App\\Program.cs",
+              "RelativeDocumentMoniker": "App\\Program.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\Projects\\2v2Tris\\App\\Program.cs",
+              "RelativeToolTip": "App\\Program.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAAsAAAArAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-01T00:16:27.091Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Game.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\Projects\\2v2Tris\\Core\\Game.cs",
+              "RelativeDocumentMoniker": "Core\\Game.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\Projects\\2v2Tris\\Core\\Game.cs",
+              "RelativeToolTip": "Core\\Game.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABwAAAA3AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-01T00:09:17.097Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
