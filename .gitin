@@ -1,0 +1,2 @@
+# Ignore Visual Studio local configuration and cache
+.vs/
