@@ -15,7 +15,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyDescriptionAttribute("raygui 5.0 bindings for Raylib-cs, including the native win-x64 raygui library.")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.2.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.2.0+1bc73a64ab4d48c29c9d7256fd0dd0d761e4039b")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.2.0+6bc016fe7bf88902ae181bb9a81b7a6a70586296")]
 [assembly: System.Reflection.AssemblyProductAttribute("Raygui-cs")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Raygui-cs")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.2.0.0")]

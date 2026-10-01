@@ -57,9 +57,26 @@
           "bin/placeholder/Raygui-cs.Local.dll": {}
         }
       },
+      "TwoVTwoTris.Entities/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v10.0",
+        "dependencies": {
+          "Raylib-cs": "8.1.0",
+          "TwoVTwoTris.Input": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/TwoVTwoTris.Entities.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/TwoVTwoTris.Entities.dll": {}
+        }
+      },
       "TwoVTwoTris.Input/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v10.0",
+        "dependencies": {
+          "Raylib-cs": "8.1.0"
+        },
         "compile": {
           "bin/placeholder/TwoVTwoTris.Input.dll": {}
         },
@@ -99,6 +116,11 @@
       "path": "../Raygui-cs/Raygui-cs.csproj",
       "msbuildProject": "../Raygui-cs/Raygui-cs.csproj"
     },
+    "TwoVTwoTris.Entities/1.0.0": {
+      "type": "project",
+      "path": "../TwoVTwoTris.Entities/TwoVTwoTris.Entities.csproj",
+      "msbuildProject": "../TwoVTwoTris.Entities/TwoVTwoTris.Entities.csproj"
+    },
     "TwoVTwoTris.Input/1.0.0": {
       "type": "project",
       "path": "../Input/TwoVTwoTris.Input.csproj",
@@ -109,6 +131,7 @@
     "net10.0": [
       "Raygui-cs.Local >= 1.2.0",
       "Raylib-cs >= 8.1.0",
+      "TwoVTwoTris.Entities >= 1.0.0",
       "TwoVTwoTris.Input >= 1.0.0"
     ]
   },
@@ -151,6 +174,9 @@
             },
             "C:\\Users\\User\\Desktop\\Projects\\2v2Tris\\Raygui-cs\\Raygui-cs.csproj": {
               "projectPath": "C:\\Users\\User\\Desktop\\Projects\\2v2Tris\\Raygui-cs\\Raygui-cs.csproj"
+            },
+            "C:\\Users\\User\\Desktop\\Projects\\2v2Tris\\TwoVTwoTris.Entities\\TwoVTwoTris.Entities.csproj": {
+              "projectPath": "C:\\Users\\User\\Desktop\\Projects\\2v2Tris\\TwoVTwoTris.Entities\\TwoVTwoTris.Entities.csproj"
             }
           }
         }

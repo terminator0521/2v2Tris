@@ -63,6 +63,7 @@
         "dependencies": {
           "Raygui-cs.Local": "1.2.0",
           "Raylib-cs": "8.1.0",
+          "TwoVTwoTris.Entities": "1.0.0",
           "TwoVTwoTris.Input": "1.0.0"
         },
         "compile": {
@@ -72,9 +73,26 @@
           "bin/placeholder/TwoVTwoTris.Core.dll": {}
         }
       },
+      "TwoVTwoTris.Entities/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v10.0",
+        "dependencies": {
+          "Raylib-cs": "8.1.0",
+          "TwoVTwoTris.Input": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/TwoVTwoTris.Entities.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/TwoVTwoTris.Entities.dll": {}
+        }
+      },
       "TwoVTwoTris.Input/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v10.0",
+        "dependencies": {
+          "Raylib-cs": "8.1.0"
+        },
         "compile": {
           "bin/placeholder/TwoVTwoTris.Input.dll": {}
         },
@@ -118,6 +136,11 @@
       "type": "project",
       "path": "../TwoVTwoTris.Core/TwoVTwoTris.Core.csproj",
       "msbuildProject": "../TwoVTwoTris.Core/TwoVTwoTris.Core.csproj"
+    },
+    "TwoVTwoTris.Entities/1.0.0": {
+      "type": "project",
+      "path": "../TwoVTwoTris.Entities/TwoVTwoTris.Entities.csproj",
+      "msbuildProject": "../TwoVTwoTris.Entities/TwoVTwoTris.Entities.csproj"
     },
     "TwoVTwoTris.Input/1.0.0": {
       "type": "project",

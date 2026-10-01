@@ -1,5 +1,7 @@
 <Solution>
+  <Project Path="Input/TwoVTwoTris.Input.csproj" Id="fa30ca3e-a73c-49aa-a63f-a68b8156884b" />
   <Project Path="Raygui-cs/Raygui-cs.csproj" />
   <Project Path="TwoVTwoTris.Core/TwoVTwoTris.Core.csproj" />
   <Project Path="TwoVTwoTris.Desktop/TwoVTwoTris.Desktop.csproj" />
+  <Project Path="TwoVTwoTris.Entities/TwoVTwoTris.Entities.csproj" Id="05f715d3-262e-49b1-b3a2-49c8851fdc11" />
 </Solution>

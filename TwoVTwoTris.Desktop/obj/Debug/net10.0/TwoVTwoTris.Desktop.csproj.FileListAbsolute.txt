@@ -84,3 +84,7 @@ C:\Users\User\Desktop\Projects\2v2Tris\TwoVTwoTris.Desktop\obj\Debug\net10.0\ref
 C:\Users\User\Desktop\Projects\2v2Tris\TwoVTwoTris.Desktop\obj\Debug\net10.0\TwoVTwoTris.Desktop.pdb
 C:\Users\User\Desktop\Projects\2v2Tris\TwoVTwoTris.Desktop\obj\Debug\net10.0\TwoVTwoTris.Desktop.genruntimeconfig.cache
 C:\Users\User\Desktop\Projects\2v2Tris\TwoVTwoTris.Desktop\obj\Debug\net10.0\ref\TwoVTwoTris.Desktop.dll
+C:\Users\User\Desktop\Projects\2v2Tris\TwoVTwoTris.Desktop\bin\Debug\net10.0\TwoVTwoTris.Entities.dll
+C:\Users\User\Desktop\Projects\2v2Tris\TwoVTwoTris.Desktop\bin\Debug\net10.0\TwoVTwoTris.Input.dll
+C:\Users\User\Desktop\Projects\2v2Tris\TwoVTwoTris.Desktop\bin\Debug\net10.0\TwoVTwoTris.Entities.pdb
+C:\Users\User\Desktop\Projects\2v2Tris\TwoVTwoTris.Desktop\bin\Debug\net10.0\TwoVTwoTris.Input.pdb

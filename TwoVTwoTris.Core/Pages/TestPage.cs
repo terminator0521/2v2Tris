@@ -1,18 +1,20 @@
 ﻿using RayGui_cs;
+using TwoVTwoTris.Entities;
 
 namespace TwoVTwoTris.Core.Pages
 {
     internal class TestPage : Page
     {
-
+        TestBlock block = new TestBlock();
 
         override internal void Update()
         {
-            //always GetInput() for internal input manager
+            //always GetInputs() for internal input manager
+            GetInputs(block);
         }
         override internal void Render()
         {
-
+            block.Draw();
         }
         override internal void UI()
         {
