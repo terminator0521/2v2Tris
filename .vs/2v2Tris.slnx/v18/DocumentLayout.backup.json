@@ -1,14 +1,30 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\User\\Desktop\\Projects\\2v2Tris\\",
+  "WorkspaceRootPath": "C:\\Users\\Ricky Xu\\Desktop\\Projects\\2v2Tris\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{EC69693E-A219-68F9-05C6-F5C8A7109C05}|Core\\TwoVTwoTris.Core.csproj|c:\\users\\user\\desktop\\projects\\2v2tris\\core\\game.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{EC69693E-A219-68F9-05C6-F5C8A7109C05}|Core\\TwoVTwoTris.Core.csproj|solutionrelative:core\\game.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A941AEAA-EBB7-0CFC-9220-D9A977BDDB6C}|TwoVTwoTris.Core\\TwoVTwoTris.Core.csproj|c:\\users\\ricky xu\\desktop\\projects\\2v2tris\\twovtwotris.core\\game.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A941AEAA-EBB7-0CFC-9220-D9A977BDDB6C}|TwoVTwoTris.Core\\TwoVTwoTris.Core.csproj|solutionrelative:twovtwotris.core\\game.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7DF2720F-879F-CB02-3344-F9ED761BFAFD}|App\\TwoVTwoTris.Desktop.csproj|c:\\users\\user\\desktop\\projects\\2v2tris\\app\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7DF2720F-879F-CB02-3344-F9ED761BFAFD}|App\\TwoVTwoTris.Desktop.csproj|solutionrelative:app\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A941AEAA-EBB7-0CFC-9220-D9A977BDDB6C}|TwoVTwoTris.Core\\TwoVTwoTris.Core.csproj|c:\\users\\ricky xu\\desktop\\projects\\2v2tris\\twovtwotris.core\\pages\\testpage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A941AEAA-EBB7-0CFC-9220-D9A977BDDB6C}|TwoVTwoTris.Core\\TwoVTwoTris.Core.csproj|solutionrelative:twovtwotris.core\\pages\\testpage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A941AEAA-EBB7-0CFC-9220-D9A977BDDB6C}|TwoVTwoTris.Core\\TwoVTwoTris.Core.csproj|c:\\users\\ricky xu\\desktop\\projects\\2v2tris\\twovtwotris.core\\pages\\ipage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A941AEAA-EBB7-0CFC-9220-D9A977BDDB6C}|TwoVTwoTris.Core\\TwoVTwoTris.Core.csproj|solutionrelative:twovtwotris.core\\pages\\ipage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{47DD52DE-40C3-A9A3-1D57-84E47965BC08}|TwoVTwoTris.Desktop\\TwoVTwoTris.Desktop.csproj|c:\\users\\ricky xu\\desktop\\projects\\2v2tris\\twovtwotris.desktop\\rendercontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{47DD52DE-40C3-A9A3-1D57-84E47965BC08}|TwoVTwoTris.Desktop\\TwoVTwoTris.Desktop.csproj|solutionrelative:twovtwotris.desktop\\rendercontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{47DD52DE-40C3-A9A3-1D57-84E47965BC08}|TwoVTwoTris.Desktop\\TwoVTwoTris.Desktop.csproj|c:\\users\\ricky xu\\desktop\\projects\\2v2tris\\twovtwotris.desktop\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{47DD52DE-40C3-A9A3-1D57-84E47965BC08}|TwoVTwoTris.Desktop\\TwoVTwoTris.Desktop.csproj|solutionrelative:twovtwotris.desktop\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B56F85DD-5ED2-89BB-7202-A7280FF13BAA}|Raygui-cs\\Raygui-cs.csproj|c:\\users\\ricky xu\\desktop\\projects\\2v2tris\\raygui-cs\\raygui-cs.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{B56F85DD-5ED2-89BB-7202-A7280FF13BAA}|Raygui-cs\\Raygui-cs.csproj|solutionrelative:raygui-cs\\raygui-cs.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     }
   ],
   "DocumentGroupContainers": [
@@ -18,32 +34,84 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\User\\Desktop\\Projects\\2v2Tris\\App\\Program.cs",
-              "RelativeDocumentMoniker": "App\\Program.cs",
-              "ToolTip": "C:\\Users\\User\\Desktop\\Projects\\2v2Tris\\App\\Program.cs",
-              "RelativeToolTip": "App\\Program.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAAAsAAAArAAAAAAAAAA==",
+              "DocumentIndex": 3,
+              "Title": "RenderContext.cs",
+              "DocumentMoniker": "C:\\Users\\Ricky Xu\\Desktop\\Projects\\2v2Tris\\TwoVTwoTris.Desktop\\RenderContext.cs",
+              "RelativeDocumentMoniker": "TwoVTwoTris.Desktop\\RenderContext.cs",
+              "ToolTip": "C:\\Users\\Ricky Xu\\Desktop\\Projects\\2v2Tris\\TwoVTwoTris.Desktop\\RenderContext.cs",
+              "RelativeToolTip": "TwoVTwoTris.Desktop\\RenderContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAB8AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-10-01T00:16:27.091Z",
+              "WhenOpened": "2026-10-01T02:02:00.85Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Ricky Xu\\Desktop\\Projects\\2v2Tris\\TwoVTwoTris.Desktop\\Program.cs",
+              "RelativeDocumentMoniker": "TwoVTwoTris.Desktop\\Program.cs",
+              "ToolTip": "C:\\Users\\Ricky Xu\\Desktop\\Projects\\2v2Tris\\TwoVTwoTris.Desktop\\Program.cs",
+              "RelativeToolTip": "TwoVTwoTris.Desktop\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACEAAAAvAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-01T02:01:08.101Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "Game.cs",
-              "DocumentMoniker": "C:\\Users\\User\\Desktop\\Projects\\2v2Tris\\Core\\Game.cs",
-              "RelativeDocumentMoniker": "Core\\Game.cs",
-              "ToolTip": "C:\\Users\\User\\Desktop\\Projects\\2v2Tris\\Core\\Game.cs",
-              "RelativeToolTip": "Core\\Game.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABwAAAA3AAAAAAAAAA==",
+              "DocumentMoniker": "C:\\Users\\Ricky Xu\\Desktop\\Projects\\2v2Tris\\TwoVTwoTris.Core\\Game.cs",
+              "RelativeDocumentMoniker": "TwoVTwoTris.Core\\Game.cs",
+              "ToolTip": "C:\\Users\\Ricky Xu\\Desktop\\Projects\\2v2Tris\\TwoVTwoTris.Core\\Game.cs",
+              "RelativeToolTip": "TwoVTwoTris.Core\\Game.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAxwBwAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-10-01T00:09:17.097Z",
+              "WhenOpened": "2026-10-01T01:47:53.291Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "IPage.cs",
+              "DocumentMoniker": "C:\\Users\\Ricky Xu\\Desktop\\Projects\\2v2Tris\\TwoVTwoTris.Core\\Pages\\IPage.cs",
+              "RelativeDocumentMoniker": "TwoVTwoTris.Core\\Pages\\IPage.cs",
+              "ToolTip": "C:\\Users\\Ricky Xu\\Desktop\\Projects\\2v2Tris\\TwoVTwoTris.Core\\Pages\\IPage.cs",
+              "RelativeToolTip": "TwoVTwoTris.Core\\Pages\\IPage.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-01T01:41:56.219Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "TestPage.cs",
+              "DocumentMoniker": "C:\\Users\\Ricky Xu\\Desktop\\Projects\\2v2Tris\\TwoVTwoTris.Core\\Pages\\TestPage.cs",
+              "RelativeDocumentMoniker": "TwoVTwoTris.Core\\Pages\\TestPage.cs",
+              "ToolTip": "C:\\Users\\Ricky Xu\\Desktop\\Projects\\2v2Tris\\TwoVTwoTris.Core\\Pages\\TestPage.cs",
+              "RelativeToolTip": "TwoVTwoTris.Core\\Pages\\TestPage.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAA0AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-01T01:29:45.779Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Raygui-cs",
+              "DocumentMoniker": "C:\\Users\\Ricky Xu\\Desktop\\Projects\\2v2Tris\\Raygui-cs\\Raygui-cs.csproj",
+              "RelativeDocumentMoniker": "Raygui-cs\\Raygui-cs.csproj",
+              "ToolTip": "C:\\Users\\Ricky Xu\\Desktop\\Projects\\2v2Tris\\Raygui-cs\\Raygui-cs.csproj",
+              "RelativeToolTip": "Raygui-cs\\Raygui-cs.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2026-10-01T01:29:23.234Z",
               "EditorCaption": ""
             }
           ]

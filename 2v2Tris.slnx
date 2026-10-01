@@ -1,4 +1,5 @@
 <Solution>
-  <Project Path="App/TwoVTwoTris.Desktop.csproj" />
-  <Project Path="Core/TwoVTwoTris.Core.csproj" />
+  <Project Path="Raygui-cs/Raygui-cs.csproj" />
+  <Project Path="TwoVTwoTris.Core/TwoVTwoTris.Core.csproj" />
+  <Project Path="TwoVTwoTris.Desktop/TwoVTwoTris.Desktop.csproj" />
 </Solution>
