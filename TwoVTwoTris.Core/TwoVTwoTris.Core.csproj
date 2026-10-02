@@ -11,9 +11,9 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Input\TwoVTwoTris.Input.csproj" />
     <ProjectReference Include="..\Raygui-cs\raygui-cs.csproj" />
     <ProjectReference Include="..\TwoVTwoTris.Entities\TwoVTwoTris.Entities.csproj" />
+    <ProjectReference Include="..\TwoVTwoTris.Input\TwoVTwoTris.Input.csproj" />
   </ItemGroup>
 
 </Project>

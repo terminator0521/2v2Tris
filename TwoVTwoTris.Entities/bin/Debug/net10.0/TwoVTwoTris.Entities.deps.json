@@ -8,6 +8,7 @@
     ".NETCoreApp,Version=v10.0": {
       "TwoVTwoTris.Entities/1.0.0": {
         "dependencies": {
+          "Raygui-cs": "1.0.0",
           "Raylib-cs": "8.1.0",
           "TwoVTwoTris.Input": "1.0.0"
         },
@@ -55,6 +56,17 @@
           }
         }
       },
+      "Raygui-cs/1.0.0": {
+        "dependencies": {
+          "Raylib-cs": "8.1.0"
+        },
+        "runtime": {
+          "Raygui-cs.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
       "TwoVTwoTris.Input/1.0.0": {
         "dependencies": {
           "Raylib-cs": "8.1.0"
@@ -80,6 +92,11 @@
       "sha512": "sha512-5BH1IoueW/47PjykoD5rHSQGkfG/0ROdv1Lj/LiJ+m/KBmDAmDRyXRpgS/qOZL6ScIMtnY5nG31dQ58y/VVXUg==",
       "path": "raylib-cs/8.1.0",
       "hashPath": "raylib-cs.8.1.0.nupkg.sha512"
+    },
+    "Raygui-cs/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
     },
     "TwoVTwoTris.Input/1.0.0": {
       "type": "project",

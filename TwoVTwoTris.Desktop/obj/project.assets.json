@@ -44,27 +44,27 @@
           }
         }
       },
-      "raygui-cs/1.0.0": {
+      "Raygui-cs/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v7.0",
         "dependencies": {
           "Raylib-cs": "7.0.1"
         },
         "compile": {
-          "bin/placeholder/raygui-cs.dll": {}
+          "bin/placeholder/Raygui-cs.dll": {}
         },
         "runtime": {
-          "bin/placeholder/raygui-cs.dll": {}
+          "bin/placeholder/Raygui-cs.dll": {}
         }
       },
       "TwoVTwoTris.Core/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v10.0",
         "dependencies": {
+          "Raygui-cs": "1.0.0",
           "Raylib-cs": "8.1.0",
           "TwoVTwoTris.Entities": "1.0.0",
-          "TwoVTwoTris.Input": "1.0.0",
-          "raygui-cs": "1.0.0"
+          "TwoVTwoTris.Input": "1.0.0"
         },
         "compile": {
           "bin/placeholder/TwoVTwoTris.Core.dll": {}
@@ -77,6 +77,7 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v10.0",
         "dependencies": {
+          "Raygui-cs": "1.0.0",
           "Raylib-cs": "8.1.0",
           "TwoVTwoTris.Input": "1.0.0"
         },
@@ -127,10 +128,10 @@
         "runtimes/win-x86/native/raylib.dll"
       ]
     },
-    "raygui-cs/1.0.0": {
+    "Raygui-cs/1.0.0": {
       "type": "project",
-      "path": "../Raygui-cs/raygui-cs.csproj",
-      "msbuildProject": "../Raygui-cs/raygui-cs.csproj"
+      "path": "../Raygui-cs/Raygui-cs.csproj",
+      "msbuildProject": "../Raygui-cs/Raygui-cs.csproj"
     },
     "TwoVTwoTris.Core/1.0.0": {
       "type": "project",
@@ -144,14 +145,15 @@
     },
     "TwoVTwoTris.Input/1.0.0": {
       "type": "project",
-      "path": "../Input/TwoVTwoTris.Input.csproj",
-      "msbuildProject": "../Input/TwoVTwoTris.Input.csproj"
+      "path": "../TwoVTwoTris.Input/TwoVTwoTris.Input.csproj",
+      "msbuildProject": "../TwoVTwoTris.Input/TwoVTwoTris.Input.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net10.0": [
       "Raylib-cs >= 8.1.0",
-      "TwoVTwoTris.Core >= 1.0.0"
+      "TwoVTwoTris.Core >= 1.0.0",
+      "TwoVTwoTris.Input >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -184,6 +186,9 @@
           "projectReferences": {
             "C:\\Users\\Ricky Xu\\Desktop\\Projects\\2v2Tris\\TwoVTwoTris.Core\\TwoVTwoTris.Core.csproj": {
               "projectPath": "C:\\Users\\Ricky Xu\\Desktop\\Projects\\2v2Tris\\TwoVTwoTris.Core\\TwoVTwoTris.Core.csproj"
+            },
+            "C:\\Users\\Ricky Xu\\Desktop\\Projects\\2v2Tris\\TwoVTwoTris.Input\\TwoVTwoTris.Input.csproj": {
+              "projectPath": "C:\\Users\\Ricky Xu\\Desktop\\Projects\\2v2Tris\\TwoVTwoTris.Input\\TwoVTwoTris.Input.csproj"
             }
           }
         }

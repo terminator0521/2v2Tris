@@ -1,15 +1,15 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Ricky Xu\\Desktop\\Projects\\2v2Tris\\Raygui-cs\\raygui-cs.csproj": {}
+    "C:\\Users\\Ricky Xu\\Desktop\\Projects\\2v2Tris\\Raygui-cs\\Raygui-cs.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Ricky Xu\\Desktop\\Projects\\2v2Tris\\Raygui-cs\\raygui-cs.csproj": {
+    "C:\\Users\\Ricky Xu\\Desktop\\Projects\\2v2Tris\\Raygui-cs\\Raygui-cs.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Ricky Xu\\Desktop\\Projects\\2v2Tris\\Raygui-cs\\raygui-cs.csproj",
-        "projectName": "raygui-cs",
-        "projectPath": "C:\\Users\\Ricky Xu\\Desktop\\Projects\\2v2Tris\\Raygui-cs\\raygui-cs.csproj",
+        "projectUniqueName": "C:\\Users\\Ricky Xu\\Desktop\\Projects\\2v2Tris\\Raygui-cs\\Raygui-cs.csproj",
+        "projectName": "Raygui-cs",
+        "projectPath": "C:\\Users\\Ricky Xu\\Desktop\\Projects\\2v2Tris\\Raygui-cs\\Raygui-cs.csproj",
         "packagesPath": "C:\\Users\\Ricky Xu\\.nuget\\packages\\",
         "outputPath": "C:\\Users\\Ricky Xu\\Desktop\\Projects\\2v2Tris\\Raygui-cs\\obj\\",
         "projectStyle": "PackageReference",

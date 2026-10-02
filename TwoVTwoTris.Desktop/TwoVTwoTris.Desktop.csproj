@@ -14,6 +14,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\TwoVTwoTris.Core\TwoVTwoTris.Core.csproj" />
+    <ProjectReference Include="..\TwoVTwoTris.Input\TwoVTwoTris.Input.csproj" />
   </ItemGroup>
 
 </Project>

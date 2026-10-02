@@ -9,7 +9,8 @@
       "TwoVTwoTris.Desktop/1.0.0": {
         "dependencies": {
           "Raylib-cs": "8.1.0",
-          "TwoVTwoTris.Core": "1.0.0"
+          "TwoVTwoTris.Core": "1.0.0",
+          "TwoVTwoTris.Input": "1.0.0"
         },
         "runtime": {
           "TwoVTwoTris.Desktop.dll": {}
@@ -55,12 +56,12 @@
           }
         }
       },
-      "raygui-cs/1.0.0": {
+      "Raygui-cs/1.0.0": {
         "dependencies": {
           "Raylib-cs": "8.1.0"
         },
         "runtime": {
-          "raygui-cs.dll": {
+          "Raygui-cs.dll": {
             "assemblyVersion": "1.0.0.0",
             "fileVersion": "1.0.0.0"
           }
@@ -68,10 +69,10 @@
       },
       "TwoVTwoTris.Core/1.0.0": {
         "dependencies": {
+          "Raygui-cs": "1.0.0",
           "Raylib-cs": "8.1.0",
           "TwoVTwoTris.Entities": "1.0.0",
-          "TwoVTwoTris.Input": "1.0.0",
-          "raygui-cs": "1.0.0"
+          "TwoVTwoTris.Input": "1.0.0"
         },
         "runtime": {
           "TwoVTwoTris.Core.dll": {
@@ -82,8 +83,7 @@
       },
       "TwoVTwoTris.Entities/1.0.0": {
         "dependencies": {
-          "Raylib-cs": "8.1.0",
-          "TwoVTwoTris.Input": "1.0.0"
+          "Raylib-cs": "8.1.0"
         },
         "runtime": {
           "TwoVTwoTris.Entities.dll": {
@@ -118,7 +118,7 @@
       "path": "raylib-cs/8.1.0",
       "hashPath": "raylib-cs.8.1.0.nupkg.sha512"
     },
-    "raygui-cs/1.0.0": {
+    "Raygui-cs/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

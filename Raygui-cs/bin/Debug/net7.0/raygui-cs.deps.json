@@ -6,12 +6,12 @@
   "compilationOptions": {},
   "targets": {
     ".NETCoreApp,Version=v7.0": {
-      "raygui-cs/1.0.0": {
+      "Raygui-cs/1.0.0": {
         "dependencies": {
           "Raylib-cs": "7.0.1"
         },
         "runtime": {
-          "raygui-cs.dll": {}
+          "Raygui-cs.dll": {}
         }
       },
       "Raylib-cs/7.0.1": {
@@ -52,7 +52,7 @@
     }
   },
   "libraries": {
-    "raygui-cs/1.0.0": {
+    "Raygui-cs/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

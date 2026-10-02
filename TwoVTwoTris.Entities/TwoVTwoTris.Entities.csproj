@@ -7,15 +7,18 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Input\TwoVTwoTris.Input.csproj" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <Folder Include="Tetriminos\" />
+    <Compile Remove="Tetriminos\**" />
+    <EmbeddedResource Remove="Tetriminos\**" />
+    <None Remove="Tetriminos\**" />
   </ItemGroup>
 
   <ItemGroup>
     <PackageReference Include="Raylib-cs" Version="8.1.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Raygui-cs\Raygui-cs.csproj" />
+    <ProjectReference Include="..\TwoVTwoTris.Input\TwoVTwoTris.Input.csproj" />
   </ItemGroup>
 
 </Project>

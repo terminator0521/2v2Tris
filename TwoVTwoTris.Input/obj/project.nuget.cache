@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "shV+q5zLLV4=",
+  "dgSpecHash": "uBBHwVXPurk=",
   "success": true,
-  "projectFilePath": "C:\\Users\\Ricky Xu\\Desktop\\Projects\\2v2Tris\\Input\\TwoVTwoTris.Input.csproj",
+  "projectFilePath": "C:\\Users\\Ricky Xu\\Desktop\\Projects\\2v2Tris\\TwoVTwoTris.Input\\TwoVTwoTris.Input.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Ricky Xu\\.nuget\\packages\\raylib-cs\\8.1.0\\raylib-cs.8.1.0.nupkg.sha512"
   ],

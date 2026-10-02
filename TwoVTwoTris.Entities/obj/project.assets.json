@@ -44,6 +44,19 @@
           }
         }
       },
+      "Raygui-cs/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v7.0",
+        "dependencies": {
+          "Raylib-cs": "7.0.1"
+        },
+        "compile": {
+          "bin/placeholder/Raygui-cs.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Raygui-cs.dll": {}
+        }
+      },
       "TwoVTwoTris.Input/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v10.0",
@@ -84,14 +97,20 @@
         "runtimes/win-x86/native/raylib.dll"
       ]
     },
+    "Raygui-cs/1.0.0": {
+      "type": "project",
+      "path": "../Raygui-cs/Raygui-cs.csproj",
+      "msbuildProject": "../Raygui-cs/Raygui-cs.csproj"
+    },
     "TwoVTwoTris.Input/1.0.0": {
       "type": "project",
-      "path": "../Input/TwoVTwoTris.Input.csproj",
-      "msbuildProject": "../Input/TwoVTwoTris.Input.csproj"
+      "path": "../TwoVTwoTris.Input/TwoVTwoTris.Input.csproj",
+      "msbuildProject": "../TwoVTwoTris.Input/TwoVTwoTris.Input.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net10.0": [
+      "Raygui-cs >= 1.0.0",
       "Raylib-cs >= 8.1.0",
       "TwoVTwoTris.Input >= 1.0.0"
     ]
@@ -124,8 +143,11 @@
           "framework": "net10.0",
           "targetAlias": "net10.0",
           "projectReferences": {
-            "C:\\Users\\Ricky Xu\\Desktop\\Projects\\2v2Tris\\Input\\TwoVTwoTris.Input.csproj": {
-              "projectPath": "C:\\Users\\Ricky Xu\\Desktop\\Projects\\2v2Tris\\Input\\TwoVTwoTris.Input.csproj"
+            "C:\\Users\\Ricky Xu\\Desktop\\Projects\\2v2Tris\\Raygui-cs\\Raygui-cs.csproj": {
+              "projectPath": "C:\\Users\\Ricky Xu\\Desktop\\Projects\\2v2Tris\\Raygui-cs\\Raygui-cs.csproj"
+            },
+            "C:\\Users\\Ricky Xu\\Desktop\\Projects\\2v2Tris\\TwoVTwoTris.Input\\TwoVTwoTris.Input.csproj": {
+              "projectPath": "C:\\Users\\Ricky Xu\\Desktop\\Projects\\2v2Tris\\TwoVTwoTris.Input\\TwoVTwoTris.Input.csproj"
             }
           }
         }
