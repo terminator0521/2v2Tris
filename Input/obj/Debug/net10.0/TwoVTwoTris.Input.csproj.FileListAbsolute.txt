@@ -12,3 +12,17 @@ C:\Users\User\Desktop\Projects\2v2Tris\Input\obj\Debug\net10.0\refint\TwoVTwoTri
 C:\Users\User\Desktop\Projects\2v2Tris\Input\obj\Debug\net10.0\TwoVTwoTris.Input.pdb
 C:\Users\User\Desktop\Projects\2v2Tris\Input\obj\Debug\net10.0\ref\TwoVTwoTris.Input.dll
 C:\Users\User\Desktop\Projects\2v2Tris\Input\obj\Debug\net10.0\TwoVTwoT.4E3DB25C.Up2Date
+C:\Users\Ricky Xu\Desktop\Projects\2v2Tris\Input\bin\Debug\net10.0\TwoVTwoTris.Input.deps.json
+C:\Users\Ricky Xu\Desktop\Projects\2v2Tris\Input\bin\Debug\net10.0\TwoVTwoTris.Input.dll
+C:\Users\Ricky Xu\Desktop\Projects\2v2Tris\Input\bin\Debug\net10.0\TwoVTwoTris.Input.pdb
+C:\Users\Ricky Xu\Desktop\Projects\2v2Tris\Input\obj\Debug\net10.0\TwoVTwoTris.Input.csproj.AssemblyReference.cache
+C:\Users\Ricky Xu\Desktop\Projects\2v2Tris\Input\obj\Debug\net10.0\TwoVTwoTris.Input.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Ricky Xu\Desktop\Projects\2v2Tris\Input\obj\Debug\net10.0\TwoVTwoTris.Input.AssemblyInfoInputs.cache
+C:\Users\Ricky Xu\Desktop\Projects\2v2Tris\Input\obj\Debug\net10.0\TwoVTwoTris.Input.AssemblyInfo.cs
+C:\Users\Ricky Xu\Desktop\Projects\2v2Tris\Input\obj\Debug\net10.0\TwoVTwoTris.Input.csproj.CoreCompileInputs.cache
+C:\Users\Ricky Xu\Desktop\Projects\2v2Tris\Input\obj\Debug\net10.0\TwoVTwoTris.Input.sourcelink.json
+C:\Users\Ricky Xu\Desktop\Projects\2v2Tris\Input\obj\Debug\net10.0\TwoVTwoTris.Input.dll
+C:\Users\Ricky Xu\Desktop\Projects\2v2Tris\Input\obj\Debug\net10.0\refint\TwoVTwoTris.Input.dll
+C:\Users\Ricky Xu\Desktop\Projects\2v2Tris\Input\obj\Debug\net10.0\TwoVTwoTris.Input.pdb
+C:\Users\Ricky Xu\Desktop\Projects\2v2Tris\Input\obj\Debug\net10.0\ref\TwoVTwoTris.Input.dll
+C:\Users\Ricky Xu\Desktop\Projects\2v2Tris\Input\obj\Debug\net10.0\TwoVTwoT.4E3DB25C.Up2Date

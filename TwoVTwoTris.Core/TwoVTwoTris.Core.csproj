@@ -12,7 +12,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\Input\TwoVTwoTris.Input.csproj" />
-    <ProjectReference Include="..\Raygui-cs\Raygui-cs.csproj" />
+    <ProjectReference Include="..\Raygui-cs\raygui-cs.csproj" />
     <ProjectReference Include="..\TwoVTwoTris.Entities\TwoVTwoTris.Entities.csproj" />
   </ItemGroup>
 

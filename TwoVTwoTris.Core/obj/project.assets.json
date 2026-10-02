@@ -44,17 +44,17 @@
           }
         }
       },
-      "Raygui-cs.Local/1.2.0": {
+      "raygui-cs/1.0.0": {
         "type": "project",
-        "framework": ".NETCoreApp,Version=v10.0",
+        "framework": ".NETCoreApp,Version=v7.0",
         "dependencies": {
-          "Raylib-cs": "8.1.0"
+          "Raylib-cs": "7.0.1"
         },
         "compile": {
-          "bin/placeholder/Raygui-cs.Local.dll": {}
+          "bin/placeholder/raygui-cs.dll": {}
         },
         "runtime": {
-          "bin/placeholder/Raygui-cs.Local.dll": {}
+          "bin/placeholder/raygui-cs.dll": {}
         }
       },
       "TwoVTwoTris.Entities/1.0.0": {
@@ -111,10 +111,10 @@
         "runtimes/win-x86/native/raylib.dll"
       ]
     },
-    "Raygui-cs.Local/1.2.0": {
+    "raygui-cs/1.0.0": {
       "type": "project",
-      "path": "../Raygui-cs/Raygui-cs.csproj",
-      "msbuildProject": "../Raygui-cs/Raygui-cs.csproj"
+      "path": "../Raygui-cs/raygui-cs.csproj",
+      "msbuildProject": "../Raygui-cs/raygui-cs.csproj"
     },
     "TwoVTwoTris.Entities/1.0.0": {
       "type": "project",
@@ -129,31 +129,26 @@
   },
   "projectFileDependencyGroups": {
     "net10.0": [
-      "Raygui-cs.Local >= 1.2.0",
       "Raylib-cs >= 8.1.0",
       "TwoVTwoTris.Entities >= 1.0.0",
-      "TwoVTwoTris.Input >= 1.0.0"
+      "TwoVTwoTris.Input >= 1.0.0",
+      "raygui-cs >= 1.0.0"
     ]
   },
   "packageFolders": {
-    "C:\\Users\\User\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+    "C:\\Users\\Ricky Xu\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\User\\Desktop\\Projects\\2v2Tris\\TwoVTwoTris.Core\\TwoVTwoTris.Core.csproj",
+      "projectUniqueName": "C:\\Users\\Ricky Xu\\Desktop\\Projects\\2v2Tris\\TwoVTwoTris.Core\\TwoVTwoTris.Core.csproj",
       "projectName": "TwoVTwoTris.Core",
-      "projectPath": "C:\\Users\\User\\Desktop\\Projects\\2v2Tris\\TwoVTwoTris.Core\\TwoVTwoTris.Core.csproj",
-      "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\User\\Desktop\\Projects\\2v2Tris\\TwoVTwoTris.Core\\obj\\",
+      "projectPath": "C:\\Users\\Ricky Xu\\Desktop\\Projects\\2v2Tris\\TwoVTwoTris.Core\\TwoVTwoTris.Core.csproj",
+      "packagesPath": "C:\\Users\\Ricky Xu\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Ricky Xu\\Desktop\\Projects\\2v2Tris\\TwoVTwoTris.Core\\obj\\",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-      ],
       "configFilePaths": [
-        "C:\\Users\\User\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Users\\Ricky Xu\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -161,7 +156,6 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-        "C:\\Program Files\\dotnet\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -169,14 +163,14 @@
           "framework": "net10.0",
           "targetAlias": "net10.0",
           "projectReferences": {
-            "C:\\Users\\User\\Desktop\\Projects\\2v2Tris\\Input\\TwoVTwoTris.Input.csproj": {
-              "projectPath": "C:\\Users\\User\\Desktop\\Projects\\2v2Tris\\Input\\TwoVTwoTris.Input.csproj"
+            "C:\\Users\\Ricky Xu\\Desktop\\Projects\\2v2Tris\\Input\\TwoVTwoTris.Input.csproj": {
+              "projectPath": "C:\\Users\\Ricky Xu\\Desktop\\Projects\\2v2Tris\\Input\\TwoVTwoTris.Input.csproj"
             },
-            "C:\\Users\\User\\Desktop\\Projects\\2v2Tris\\Raygui-cs\\Raygui-cs.csproj": {
-              "projectPath": "C:\\Users\\User\\Desktop\\Projects\\2v2Tris\\Raygui-cs\\Raygui-cs.csproj"
+            "C:\\Users\\Ricky Xu\\Desktop\\Projects\\2v2Tris\\Raygui-cs\\raygui-cs.csproj": {
+              "projectPath": "C:\\Users\\Ricky Xu\\Desktop\\Projects\\2v2Tris\\Raygui-cs\\raygui-cs.csproj"
             },
-            "C:\\Users\\User\\Desktop\\Projects\\2v2Tris\\TwoVTwoTris.Entities\\TwoVTwoTris.Entities.csproj": {
-              "projectPath": "C:\\Users\\User\\Desktop\\Projects\\2v2Tris\\TwoVTwoTris.Entities\\TwoVTwoTris.Entities.csproj"
+            "C:\\Users\\Ricky Xu\\Desktop\\Projects\\2v2Tris\\TwoVTwoTris.Entities\\TwoVTwoTris.Entities.csproj": {
+              "projectPath": "C:\\Users\\Ricky Xu\\Desktop\\Projects\\2v2Tris\\TwoVTwoTris.Entities\\TwoVTwoTris.Entities.csproj"
             }
           }
         }

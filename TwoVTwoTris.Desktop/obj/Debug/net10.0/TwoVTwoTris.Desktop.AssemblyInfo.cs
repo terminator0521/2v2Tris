@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("TwoVTwoTris.Desktop")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+6bc016fe7bf88902ae181bb9a81b7a6a70586296")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+ea440a0aacde20943cd9f173a2d7d46060e641ce")]
 [assembly: System.Reflection.AssemblyProductAttribute("TwoVTwoTris.Desktop")]
 [assembly: System.Reflection.AssemblyTitleAttribute("TwoVTwoTris.Desktop")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

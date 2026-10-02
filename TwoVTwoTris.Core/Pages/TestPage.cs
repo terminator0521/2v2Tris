@@ -1,6 +1,6 @@
-﻿using RayGui_cs;
-using TwoVTwoTris.Entities;
-
+﻿using TwoVTwoTris.Entities;
+using raygui_cs;
+using Raylib_cs;
 namespace TwoVTwoTris.Core.Pages
 {
     internal class TestPage : Page
@@ -18,8 +18,7 @@ namespace TwoVTwoTris.Core.Pages
         }
         override internal void UI()
         {
-            GuiStyle.Set(GuiDefaultProperty.TextSize, 40);
-            Gui.Label(new(200, 200, 600, 200), "hello world");
+            Raygui.GuiLabel(new Rectangle(100, 100, 200, 50), "Test Page");
         }
 
         override internal Page SetNextPage()

@@ -1,5 +1,4 @@
-﻿using RayGui_cs;
-using TwoVTwoTris.Core.Pages;
+﻿using TwoVTwoTris.Core.Pages;
 
 
 namespace TwoVTwoTris.Core
@@ -28,9 +27,6 @@ namespace TwoVTwoTris.Core
         public void UI()
         {
             page.UI();
-
-            //reset gui properties
-            GuiStyle.LoadDefault();
         }
 
         public void GetPage()

@@ -1,0 +1,14 @@
+C:\Users\Ricky Xu\Desktop\Projects\2v2Tris\Raygui-cs\bin\Debug\net7.0\raygui-cs.deps.json
+C:\Users\Ricky Xu\Desktop\Projects\2v2Tris\Raygui-cs\bin\Debug\net7.0\raygui-cs.dll
+C:\Users\Ricky Xu\Desktop\Projects\2v2Tris\Raygui-cs\bin\Debug\net7.0\raygui-cs.pdb
+C:\Users\Ricky Xu\Desktop\Projects\2v2Tris\Raygui-cs\obj\Debug\net7.0\raygui-cs.csproj.AssemblyReference.cache
+C:\Users\Ricky Xu\Desktop\Projects\2v2Tris\Raygui-cs\obj\Debug\net7.0\raygui-cs.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Ricky Xu\Desktop\Projects\2v2Tris\Raygui-cs\obj\Debug\net7.0\raygui-cs.AssemblyInfoInputs.cache
+C:\Users\Ricky Xu\Desktop\Projects\2v2Tris\Raygui-cs\obj\Debug\net7.0\raygui-cs.AssemblyInfo.cs
+C:\Users\Ricky Xu\Desktop\Projects\2v2Tris\Raygui-cs\obj\Debug\net7.0\raygui-cs.csproj.CoreCompileInputs.cache
+C:\Users\Ricky Xu\Desktop\Projects\2v2Tris\Raygui-cs\obj\Debug\net7.0\raygui-cs.sourcelink.json
+C:\Users\Ricky Xu\Desktop\Projects\2v2Tris\Raygui-cs\obj\Debug\net7.0\raygui-cs.dll
+C:\Users\Ricky Xu\Desktop\Projects\2v2Tris\Raygui-cs\obj\Debug\net7.0\refint\raygui-cs.dll
+C:\Users\Ricky Xu\Desktop\Projects\2v2Tris\Raygui-cs\obj\Debug\net7.0\raygui-cs.pdb
+C:\Users\Ricky Xu\Desktop\Projects\2v2Tris\Raygui-cs\obj\Debug\net7.0\ref\raygui-cs.dll
+C:\Users\Ricky Xu\Desktop\Projects\2v2Tris\Raygui-cs\obj\Debug\net7.0\raygui-cs.csproj.Up2Date
