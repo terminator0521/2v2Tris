@@ -62,14 +62,17 @@
           "Raylib-cs": "8.1.0"
         },
         "runtime": {
-          "raygui-cs.dll": {
-            "fileVersion": "0.0.0.0"
+          "Raygui-cs.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
           }
         }
       },
       "TwoVTwoTris.Entities/1.0.0": {
         "dependencies": {
-          "Raylib-cs": "8.1.0"
+          "Raygui-cs": "1.0.0",
+          "Raylib-cs": "8.1.0",
+          "TwoVTwoTris.Input": "1.0.0"
         },
         "runtime": {
           "TwoVTwoTris.Entities.dll": {
