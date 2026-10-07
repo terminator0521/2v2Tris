@@ -4,17 +4,35 @@
     <TargetFramework>net10.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
+<<<<<<< HEAD
     <OutputType>Exe</OutputType>
     <StartupObject>TwoVTwoTris.Desktop.Program</StartupObject>
+=======
+<<<<<<<< HEAD:TwoVTwoTris.Input/TwoVTwoTris.Input.csproj
+========
+    <OutputType>Exe</OutputType>
+    <StartupObject>TwoVTwoTris.Desktop.Program</StartupObject>
+>>>>>>>> refs/remotes/origin/main:TwoVTwoTris.Desktop/TwoVTwoTris.Desktop.csproj
+>>>>>>> refs/remotes/origin/main
   </PropertyGroup>
 
   <ItemGroup>
     <PackageReference Include="Raylib-cs" Version="8.1.0" />
   </ItemGroup>
 
+<<<<<<< HEAD
   <ItemGroup>
     <ProjectReference Include="..\TwoVTwoTris.Core\TwoVTwoTris.Core.csproj" />
     <ProjectReference Include="..\TwoVTwoTris.Input\TwoVTwoTris.Input.csproj" />
   </ItemGroup>
 
+=======
+<<<<<<<< HEAD:TwoVTwoTris.Input/TwoVTwoTris.Input.csproj
+========
+  <ItemGroup>
+    <ProjectReference Include="..\TwoVTwoTris.Core\TwoVTwoTris.Core.csproj" />
+  </ItemGroup>
+
+>>>>>>>> refs/remotes/origin/main:TwoVTwoTris.Desktop/TwoVTwoTris.Desktop.csproj
+>>>>>>> refs/remotes/origin/main
 </Project>

@@ -10,4 +10,11 @@
     <PackageReference Include="Raylib-cs" Version="8.1.0" />
   </ItemGroup>
 
+<<<<<<<< HEAD:TwoVTwoTris.Core/TwoVTwoTris.Core.csproj.Backup.tmp
+========
+  <ItemGroup>
+    <ProjectReference Include="..\Raygui-cs\Raygui-cs.csproj" />
+  </ItemGroup>
+
+>>>>>>>> refs/remotes/origin/main:TwoVTwoTris.Core/TwoVTwoTris.Core.csproj
 </Project>

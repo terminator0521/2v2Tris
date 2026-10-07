@@ -44,6 +44,7 @@
           }
         }
       },
+<<<<<<< HEAD
       "Raygui-cs/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v7.0",
@@ -57,10 +58,13 @@
           "bin/placeholder/Raygui-cs.dll": {}
         }
       },
+=======
+>>>>>>> refs/remotes/origin/main
       "TwoVTwoTris.Core/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v10.0",
         "dependencies": {
+<<<<<<< HEAD
           "Raygui-cs": "1.0.0",
           "Raylib-cs": "8.1.0",
           "TwoVTwoTris.Entities": "1.0.0",
@@ -99,6 +103,15 @@
         },
         "runtime": {
           "bin/placeholder/TwoVTwoTris.Input.dll": {}
+=======
+          "Raylib-cs": "8.1.0"
+        },
+        "compile": {
+          "bin/placeholder/TwoVTwoTris.Core.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/TwoVTwoTris.Core.dll": {}
+>>>>>>> refs/remotes/origin/main
         }
       }
     }
@@ -128,15 +141,19 @@
         "runtimes/win-x86/native/raylib.dll"
       ]
     },
+<<<<<<< HEAD
     "Raygui-cs/1.0.0": {
       "type": "project",
       "path": "../Raygui-cs/Raygui-cs.csproj",
       "msbuildProject": "../Raygui-cs/Raygui-cs.csproj"
     },
+=======
+>>>>>>> refs/remotes/origin/main
     "TwoVTwoTris.Core/1.0.0": {
       "type": "project",
       "path": "../TwoVTwoTris.Core/TwoVTwoTris.Core.csproj",
       "msbuildProject": "../TwoVTwoTris.Core/TwoVTwoTris.Core.csproj"
+<<<<<<< HEAD
     },
     "TwoVTwoTris.Entities/1.0.0": {
       "type": "project",
@@ -147,13 +164,19 @@
       "type": "project",
       "path": "../TwoVTwoTris.Input/TwoVTwoTris.Input.csproj",
       "msbuildProject": "../TwoVTwoTris.Input/TwoVTwoTris.Input.csproj"
+=======
+>>>>>>> refs/remotes/origin/main
     }
   },
   "projectFileDependencyGroups": {
     "net10.0": [
       "Raylib-cs >= 8.1.0",
+<<<<<<< HEAD
       "TwoVTwoTris.Core >= 1.0.0",
       "TwoVTwoTris.Input >= 1.0.0"
+=======
+      "TwoVTwoTris.Core >= 1.0.0"
+>>>>>>> refs/remotes/origin/main
     ]
   },
   "packageFolders": {
@@ -186,9 +209,12 @@
           "projectReferences": {
             "C:\\Users\\Ricky Xu\\Desktop\\Projects\\2v2Tris\\TwoVTwoTris.Core\\TwoVTwoTris.Core.csproj": {
               "projectPath": "C:\\Users\\Ricky Xu\\Desktop\\Projects\\2v2Tris\\TwoVTwoTris.Core\\TwoVTwoTris.Core.csproj"
+<<<<<<< HEAD
             },
             "C:\\Users\\Ricky Xu\\Desktop\\Projects\\2v2Tris\\TwoVTwoTris.Input\\TwoVTwoTris.Input.csproj": {
               "projectPath": "C:\\Users\\Ricky Xu\\Desktop\\Projects\\2v2Tris\\TwoVTwoTris.Input\\TwoVTwoTris.Input.csproj"
+=======
+>>>>>>> refs/remotes/origin/main
             }
           }
         }

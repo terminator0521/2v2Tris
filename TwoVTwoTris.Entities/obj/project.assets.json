@@ -44,6 +44,7 @@
           }
         }
       },
+<<<<<<< HEAD
       "Raygui-cs/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v7.0",
@@ -55,6 +56,19 @@
         },
         "runtime": {
           "bin/placeholder/Raygui-cs.dll": {}
+=======
+      "Raygui-cs.Local/1.2.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v10.0",
+        "dependencies": {
+          "Raylib-cs": "8.1.0"
+        },
+        "compile": {
+          "bin/placeholder/Raygui-cs.Local.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Raygui-cs.Local.dll": {}
+>>>>>>> refs/remotes/origin/main
         }
       },
       "TwoVTwoTris.Input/1.0.0": {
@@ -97,7 +111,11 @@
         "runtimes/win-x86/native/raylib.dll"
       ]
     },
+<<<<<<< HEAD
     "Raygui-cs/1.0.0": {
+=======
+    "Raygui-cs.Local/1.2.0": {
+>>>>>>> refs/remotes/origin/main
       "type": "project",
       "path": "../Raygui-cs/Raygui-cs.csproj",
       "msbuildProject": "../Raygui-cs/Raygui-cs.csproj"
@@ -110,7 +128,11 @@
   },
   "projectFileDependencyGroups": {
     "net10.0": [
+<<<<<<< HEAD
       "Raygui-cs >= 1.0.0",
+=======
+      "Raygui-cs.Local >= 1.2.0",
+>>>>>>> refs/remotes/origin/main
       "Raylib-cs >= 8.1.0",
       "TwoVTwoTris.Input >= 1.0.0"
     ]

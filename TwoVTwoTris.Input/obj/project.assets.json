@@ -81,13 +81,21 @@
     "C:\\Users\\Ricky Xu\\.nuget\\packages\\": {}
   },
   "project": {
-    "version": "1.0.0",
+    "version": "1.2.0",
     "restore": {
+<<<<<<<< HEAD:TwoVTwoTris.Input/obj/project.assets.json
       "projectUniqueName": "C:\\Users\\Ricky Xu\\Desktop\\Projects\\2v2Tris\\TwoVTwoTris.Input\\TwoVTwoTris.Input.csproj",
       "projectName": "TwoVTwoTris.Input",
       "projectPath": "C:\\Users\\Ricky Xu\\Desktop\\Projects\\2v2Tris\\TwoVTwoTris.Input\\TwoVTwoTris.Input.csproj",
       "packagesPath": "C:\\Users\\Ricky Xu\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\Ricky Xu\\Desktop\\Projects\\2v2Tris\\TwoVTwoTris.Input\\obj\\",
+========
+      "projectUniqueName": "C:\\Users\\Ricky Xu\\Desktop\\Projects\\2v2Tris\\Raygui-cs\\Raygui-cs.csproj",
+      "projectName": "Raygui-cs.Local",
+      "projectPath": "C:\\Users\\Ricky Xu\\Desktop\\Projects\\2v2Tris\\Raygui-cs\\Raygui-cs.csproj",
+      "packagesPath": "C:\\Users\\Ricky Xu\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Ricky Xu\\Desktop\\Projects\\2v2Tris\\Raygui-cs\\obj\\",
+>>>>>>>> refs/remotes/origin/main:Raygui-cs/obj/project.assets.json
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Ricky Xu\\AppData\\Roaming\\NuGet\\NuGet.Config",

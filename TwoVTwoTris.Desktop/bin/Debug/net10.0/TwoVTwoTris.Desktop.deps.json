@@ -10,7 +10,11 @@
         "dependencies": {
           "Raylib-cs": "8.1.0",
           "TwoVTwoTris.Core": "1.0.0",
+<<<<<<< HEAD
           "TwoVTwoTris.Input": "1.0.0"
+=======
+          "Raygui-cs": "1.2.0.0"
+>>>>>>> refs/remotes/origin/main
         },
         "runtime": {
           "TwoVTwoTris.Desktop.dll": {}
@@ -56,23 +60,37 @@
           }
         }
       },
+<<<<<<< HEAD
       "Raygui-cs/1.0.0": {
+=======
+      "Raygui-cs.Local/1.2.0": {
+>>>>>>> refs/remotes/origin/main
         "dependencies": {
           "Raylib-cs": "8.1.0"
         },
         "runtime": {
           "Raygui-cs.dll": {
+<<<<<<< HEAD
             "assemblyVersion": "1.0.0.0",
             "fileVersion": "1.0.0.0"
+=======
+            "assemblyVersion": "1.2.0.0",
+            "fileVersion": "1.2.0.0"
+>>>>>>> refs/remotes/origin/main
           }
         }
       },
       "TwoVTwoTris.Core/1.0.0": {
         "dependencies": {
+<<<<<<< HEAD
           "Raygui-cs": "1.0.0",
           "Raylib-cs": "8.1.0",
           "TwoVTwoTris.Entities": "1.0.0",
           "TwoVTwoTris.Input": "1.0.0"
+=======
+          "Raygui-cs.Local": "1.2.0",
+          "Raylib-cs": "8.1.0"
+>>>>>>> refs/remotes/origin/main
         },
         "runtime": {
           "TwoVTwoTris.Core.dll": {
@@ -81,6 +99,7 @@
           }
         }
       },
+<<<<<<< HEAD
       "TwoVTwoTris.Entities/1.0.0": {
         "dependencies": {
           "Raygui-cs": "1.0.0",
@@ -102,6 +121,13 @@
           "TwoVTwoTris.Input.dll": {
             "assemblyVersion": "1.0.0.0",
             "fileVersion": "1.0.0.0"
+=======
+      "Raygui-cs/1.2.0.0": {
+        "runtime": {
+          "Raygui-cs.dll": {
+            "assemblyVersion": "1.2.0.0",
+            "fileVersion": "1.2.0.0"
+>>>>>>> refs/remotes/origin/main
           }
         }
       }
@@ -120,7 +146,11 @@
       "path": "raylib-cs/8.1.0",
       "hashPath": "raylib-cs.8.1.0.nupkg.sha512"
     },
+<<<<<<< HEAD
     "Raygui-cs/1.0.0": {
+=======
+    "Raygui-cs.Local/1.2.0": {
+>>>>>>> refs/remotes/origin/main
       "type": "project",
       "serviceable": false,
       "sha512": ""
@@ -130,6 +160,7 @@
       "serviceable": false,
       "sha512": ""
     },
+<<<<<<< HEAD
     "TwoVTwoTris.Entities/1.0.0": {
       "type": "project",
       "serviceable": false,
@@ -137,6 +168,10 @@
     },
     "TwoVTwoTris.Input/1.0.0": {
       "type": "project",
+=======
+    "Raygui-cs/1.2.0.0": {
+      "type": "reference",
+>>>>>>> refs/remotes/origin/main
       "serviceable": false,
       "sha512": ""
     }

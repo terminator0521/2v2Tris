@@ -10,8 +10,13 @@ build_property.PlatformNeutralAssembly =
 build_property.EnforceExtendedAnalyzerRules = 
 build_property.EntryPointFilePath = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
+<<<<<<<< HEAD:TwoVTwoTris.Input/obj/Debug/net10.0/Input.GeneratedMSBuildEditorConfig.editorconfig
 build_property.RootNamespace = Input
 build_property.ProjectDir = C:\Users\User\Desktop\Projects\2v2Tris\Input\
+========
+build_property.RootNamespace = 2v2Tris.Core
+build_property.ProjectDir = C:\Users\User\Desktop\Projects\2v2Tris\Core\
+>>>>>>>> refs/remotes/origin/main:TwoVTwoTris.Core/obj/Debug/net10.0/2v2Tris.Core.GeneratedMSBuildEditorConfig.editorconfig
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.EffectiveAnalysisLevelStyle = 10.0

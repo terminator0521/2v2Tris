@@ -4,6 +4,7 @@
     "C:\\Users\\Ricky Xu\\Desktop\\Projects\\2v2Tris\\TwoVTwoTris.Core\\TwoVTwoTris.Core.csproj": {}
   },
   "projects": {
+<<<<<<< HEAD
     "C:\\Users\\Ricky Xu\\Desktop\\Projects\\2v2Tris\\Raygui-cs\\Raygui-cs.csproj": {
       "version": "1.0.0",
       "restore": {
@@ -87,6 +88,8 @@
         }
       }
     },
+=======
+>>>>>>> refs/remotes/origin/main
     "C:\\Users\\Ricky Xu\\Desktop\\Projects\\2v2Tris\\TwoVTwoTris.Core\\TwoVTwoTris.Core.csproj": {
       "version": "1.0.0",
       "restore": {
@@ -111,6 +114,7 @@
           "net10.0": {
             "framework": "net10.0",
             "targetAlias": "net10.0",
+<<<<<<< HEAD
             "projectReferences": {
               "C:\\Users\\Ricky Xu\\Desktop\\Projects\\2v2Tris\\Raygui-cs\\raygui-cs.csproj": {
                 "projectPath": "C:\\Users\\Ricky Xu\\Desktop\\Projects\\2v2Tris\\Raygui-cs\\raygui-cs.csproj"
@@ -814,6 +818,8 @@
           "net10.0": {
             "framework": "net10.0",
             "targetAlias": "net10.0",
+=======
+>>>>>>> refs/remotes/origin/main
             "projectReferences": {}
           }
         },
