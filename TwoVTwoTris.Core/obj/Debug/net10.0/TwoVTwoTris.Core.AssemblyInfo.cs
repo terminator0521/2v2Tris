@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("TwoVTwoTris.Core")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+a8019b38b3170f924c0eb0b63b8665d19f3faf1a")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+ae6689bc771ad3a508fd0ec6eb27a0703aa39e26")]
 [assembly: System.Reflection.AssemblyProductAttribute("TwoVTwoTris.Core")]
 [assembly: System.Reflection.AssemblyTitleAttribute("TwoVTwoTris.Core")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
