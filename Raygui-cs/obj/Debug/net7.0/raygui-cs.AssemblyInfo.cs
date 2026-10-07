@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Raygui-cs")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+fdcc47a7559890856c5bd0ae0be9529a1cf05c73")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+a8019b38b3170f924c0eb0b63b8665d19f3faf1a")]
 [assembly: System.Reflection.AssemblyProductAttribute("Raygui-cs")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Raygui-cs")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
