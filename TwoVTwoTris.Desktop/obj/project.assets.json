@@ -44,24 +44,10 @@
           }
         }
       },
-      "Raygui-cs.Local/1.2.0": {
-        "type": "project",
-        "framework": ".NETCoreApp,Version=v10.0",
-        "dependencies": {
-          "Raylib-cs": "8.1.0"
-        },
-        "compile": {
-          "bin/placeholder/Raygui-cs.Local.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/Raygui-cs.Local.dll": {}
-        }
-      },
       "TwoVTwoTris.Core/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v10.0",
         "dependencies": {
-          "Raygui-cs.Local": "1.2.0",
           "Raylib-cs": "8.1.0"
         },
         "compile": {
@@ -97,11 +83,6 @@
         "runtimes/win-x64/native/raylib.dll",
         "runtimes/win-x86/native/raylib.dll"
       ]
-    },
-    "Raygui-cs.Local/1.2.0": {
-      "type": "project",
-      "path": "../Raygui-cs/Raygui-cs.csproj",
-      "msbuildProject": "../Raygui-cs/Raygui-cs.csproj"
     },
     "TwoVTwoTris.Core/1.0.0": {
       "type": "project",
