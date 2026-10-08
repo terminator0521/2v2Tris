@@ -5,10 +5,10 @@ namespace TwoVTwoTris.Core
 {
     public class Game
     {
-        Page page; //current page singleton
+        Scene page; //current page singleton
         public Game()
         {
-            page = new TestPage();
+            page = new TestScene();
         }
 
         //run game updates
@@ -32,7 +32,7 @@ namespace TwoVTwoTris.Core
         public void GetPage()
         {
             //change page if the current page requests a change in page
-            if (page.SetNextPage() is not null)
+            if (page.SetNextScene() is not null)
             {
 
             }

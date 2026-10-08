@@ -1,13 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "aNevYd4qirg=",
+  "dgSpecHash": "d+LhZthAe9Q=",
   "success": true,
   "projectFilePath": "C:\\Users\\Ricky Xu\\Desktop\\Projects\\2v2Tris\\Raygui-cs\\Raygui-cs.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\Ricky Xu\\.nuget\\packages\\raylib-cs\\7.0.1\\raylib-cs.7.0.1.nupkg.sha512",
-    "C:\\Users\\Ricky Xu\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\7.0.20\\microsoft.windowsdesktop.app.ref.7.0.20.nupkg.sha512",
-    "C:\\Users\\Ricky Xu\\.nuget\\packages\\microsoft.netcore.app.ref\\7.0.20\\microsoft.netcore.app.ref.7.0.20.nupkg.sha512",
-    "C:\\Users\\Ricky Xu\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\7.0.20\\microsoft.aspnetcore.app.ref.7.0.20.nupkg.sha512"
+    "C:\\Users\\Ricky Xu\\.nuget\\packages\\raylib-cs\\7.0.1\\raylib-cs.7.0.1.nupkg.sha512"
   ],
   "logs": []
 }

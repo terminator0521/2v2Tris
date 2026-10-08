@@ -5,7 +5,7 @@ namespace TwoVTwoTris.Core.Pages
     /// <summary>
     /// Abstract class for creating a page that manages a state of the game.
     /// </summary>
-    internal abstract class Page
+    internal abstract class Scene
     {
         /// <summary>
         /// Runs game logic updates. 
@@ -36,6 +36,6 @@ namespace TwoVTwoTris.Core.Pages
             }
         }
 
-        internal abstract Page SetNextPage();
+        internal abstract Scene SetNextScene();
     }
 }

@@ -3,7 +3,7 @@ using raygui_cs;
 using Raylib_cs;
 namespace TwoVTwoTris.Core.Pages
 {
-    internal class TestPage : Page
+    internal class TestScene : Scene
     {
         TestBlock block = new TestBlock();
 
@@ -21,7 +21,7 @@ namespace TwoVTwoTris.Core.Pages
             Raygui.GuiLabel(new Rectangle(100, 100, 200, 50), "Test Page");
         }
 
-        override internal Page SetNextPage()
+        override internal Scene SetNextScene()
         {
             return null;
         }
