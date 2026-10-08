@@ -14,11 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("TwoVTwoTris.Desktop")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-<<<<<<< HEAD
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+ae6689bc771ad3a508fd0ec6eb27a0703aa39e26")]
-=======
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+b28ba2ef1f975556f850784c5a66443a3ac3cffc")]
->>>>>>> refs/remotes/origin/main
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+f18641a77ce2406275b2fa1b2110830f2534d1d6")]
 [assembly: System.Reflection.AssemblyProductAttribute("TwoVTwoTris.Desktop")]
 [assembly: System.Reflection.AssemblyTitleAttribute("TwoVTwoTris.Desktop")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

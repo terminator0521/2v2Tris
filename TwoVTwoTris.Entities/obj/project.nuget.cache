@@ -1,10 +1,6 @@
 {
   "version": 2,
-<<<<<<< HEAD
   "dgSpecHash": "7vRZ7qSuF+A=",
-=======
-  "dgSpecHash": "m0K7nBuPczc=",
->>>>>>> refs/remotes/origin/main
   "success": true,
   "projectFilePath": "C:\\Users\\Ricky Xu\\Desktop\\Projects\\2v2Tris\\TwoVTwoTris.Entities\\TwoVTwoTris.Entities.csproj",
   "expectedPackageFiles": [

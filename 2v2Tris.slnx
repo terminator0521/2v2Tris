@@ -2,9 +2,6 @@
   <Project Path="Raygui-cs/Raygui-cs.csproj" />
   <Project Path="TwoVTwoTris.Core/TwoVTwoTris.Core.csproj" />
   <Project Path="TwoVTwoTris.Desktop/TwoVTwoTris.Desktop.csproj" />
-<<<<<<< HEAD
   <Project Path="TwoVTwoTris.Entities/TwoVTwoTris.Entities.csproj" Id="05f715d3-262e-49b1-b3a2-49c8851fdc11" />
   <Project Path="TwoVTwoTris.Input/TwoVTwoTris.Input.csproj" />
-=======
->>>>>>> refs/remotes/origin/main
 </Solution>

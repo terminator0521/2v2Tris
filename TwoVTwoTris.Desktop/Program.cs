@@ -1,8 +1,5 @@
 ﻿using Raylib_cs;
-<<<<<<< HEAD
 using raygui_cs;
-=======
->>>>>>> refs/remotes/origin/main
 using TwoVTwoTris.Core;
 
 namespace TwoVTwoTris.Desktop
@@ -27,20 +24,13 @@ namespace TwoVTwoTris.Desktop
                 Raylib.ClearBackground(Color.White); //reset renderer
                 game.Render(); ;//render game to main renderer
                 Raylib.EndTextureMode();
-<<<<<<< HEAD
                 
-=======
-
->>>>>>> refs/remotes/origin/main
                 //draw in window context
                 Raylib.BeginDrawing();
                 Raylib.ClearBackground(Color.Black); //reset renderer
                 renderContext.Render(); //draw main renderer to window
                 game.UI(); //draw ui
-<<<<<<< HEAD
                 Raygui.GuiSetStyle((int)GuiControl.DEFAULT, (int)GuiDefaultProperty.TEXT_SIZE, 20);
-=======
->>>>>>> refs/remotes/origin/main
                 Raylib.EndDrawing();
 
                 game.GetPage(); //get next page
