@@ -1,6 +1,6 @@
 ﻿using TwoVTwoTris.Input;
 
-namespace TwoVTwoTris.Core.Pages
+namespace TwoVTwoTris.Core
 {
     /// <summary>
     /// Abstract class for creating a page that manages a state of the game.

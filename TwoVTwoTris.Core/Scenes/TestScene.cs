@@ -1,7 +1,7 @@
 ﻿using TwoVTwoTris.Entities;
 using raygui_cs;
 using Raylib_cs;
-namespace TwoVTwoTris.Core.Pages
+namespace TwoVTwoTris.Core.Scenes
 {
     internal class TestScene : Scene
     {

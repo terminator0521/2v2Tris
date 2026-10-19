@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("TwoVTwoTris.Input")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+eba8c300cc146fce9f11026fb348d11e12d56965")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+3293553c05bb0c1775d0dbd73ecbe1fa63066520")]
 [assembly: System.Reflection.AssemblyProductAttribute("TwoVTwoTris.Input")]
 [assembly: System.Reflection.AssemblyTitleAttribute("TwoVTwoTris.Input")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

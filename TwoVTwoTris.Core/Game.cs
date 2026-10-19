@@ -1,4 +1,4 @@
-﻿using TwoVTwoTris.Core.Pages;
+﻿using TwoVTwoTris.Core.Scenes;
 
 
 namespace TwoVTwoTris.Core
