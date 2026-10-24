@@ -4,7 +4,7 @@
 ## Get latest from https://github.com/github/gitignore/blob/main/VisualStudio.gitignore
 
 #Ignore Raylib Randoms
-Raygui-cs\obj\Debug
+Raygui-cs/[Oo]bj/[Dd]ebug/
 
 # User-specific files
 *.rsuser
