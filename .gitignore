@@ -3,9 +3,13 @@
 ##
 ## Get latest from https://github.com/github/gitignore/blob/main/VisualStudio.gitignore
 
-#Ignore Raylib Randoms
-raygui-cs/bin/
-raygui-cs/obj/
+# 1. Ignore all bin and obj folders globally
+bin/
+obj/
+
+# 2. Whitelist any bin or obj folders that are children of a raygui folder
+!**/Raygui-cs/**/bin/
+!**/Raygui-cs/**/obj/
 
 # User-specific files
 *.rsuser
