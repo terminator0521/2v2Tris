@@ -1,5 +1,5 @@
-﻿using Raylib_cs;
-using raygui_cs;
+﻿using raygui_cs;
+using Raylib_cs;
 using TwoVTwoTris.Core;
 
 namespace TwoVTwoTris.Desktop
@@ -24,7 +24,7 @@ namespace TwoVTwoTris.Desktop
                 Raylib.ClearBackground(Color.White); //reset renderer
                 game.Render(); ;//render game to main renderer
                 Raylib.EndTextureMode();
-                
+
                 //draw in window context
                 Raylib.BeginDrawing();
                 Raylib.ClearBackground(Color.Black); //reset renderer

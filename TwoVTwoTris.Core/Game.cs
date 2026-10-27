@@ -5,36 +5,38 @@ namespace TwoVTwoTris.Core
 {
     public class Game
     {
-        Scene page; //current page singleton
+        Scene _scene; //current page singleton
         public Game()
         {
-            page = new TestScene();
+            _scene = new TestScene();
         }
 
         //run game updates
         public void Update()
         {
-            page.Update();
+            _scene.Update();
         }
 
         //run draw updates
         public void Render()
         {
-            page.Render();
+            _scene.Render();
         }
 
         //run ui updates
         public void UI()
         {
-            page.UI();
+            _scene.UI();
         }
 
         public void GetPage()
         {
-            //change page if the current page requests a change in page
-            if (page.SetNextScene() is not null)
-            {
 
+            //change page if the current page requests a change in page
+            Scene nextScene = _scene.SetNextScene();
+            if (nextScene is not null)
+            {
+                _scene = nextScene;
             }
         }
     }

@@ -21,6 +21,7 @@ namespace TwoVTwoTris.Core
 
         /// <summary>
         /// Put all UI code here as it is linked to the main render context. Do not use Raylib.BeginDrawing() or Raylib.EndDrawing() here.
+        /// Put only Raygui calls in here
         /// </summary>
         abstract internal void UI();
 
@@ -28,7 +29,7 @@ namespace TwoVTwoTris.Core
         /// 
         /// </summary>
         /// <param name="inputManagers">Pass </param>
-        virtual internal void GetInputs(params IInputManager[] inputManagers)
+        virtual internal void GetInputs(IInputManager[] inputManagers)
         {
             foreach (var inputManager in inputManagers)
             {
