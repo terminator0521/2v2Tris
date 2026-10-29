@@ -31,6 +31,9 @@ namespace TwoVTwoTris.Core
         /// <param name="inputManagers">Pass </param>
         virtual internal void GetInputs(IInputManager[] inputManagers)
         {
+            if (inputManagers is null)
+                return;
+
             foreach (var inputManager in inputManagers)
             {
                 inputManager.GetInputs();
