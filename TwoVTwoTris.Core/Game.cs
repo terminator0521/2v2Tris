@@ -8,7 +8,7 @@ namespace TwoVTwoTris.Core
         Scene _scene; //current page singleton
         public Game()
         {
-            _scene = new TestScene();
+            _scene = new SettingScene();
         }
 
         //run game updates

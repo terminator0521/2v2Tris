@@ -8,6 +8,7 @@ namespace TwoVTwoTris.Core.Scenes
     {
         TestBlock block;
         IInputManager[] i;
+        private Scene j;
 
         internal TestScene() : base()
         {
@@ -26,16 +27,16 @@ namespace TwoVTwoTris.Core.Scenes
         }
         override internal void UI()
         {
-            Raygui.GuiLabel(new Rectangle(100, 100, 200, 50), "Test Page");
-            if (Raygui.GuiButton(new Rectangle(100, 100, 200, 200), "Night") == 1)
-            {
-                Console.WriteLine("hiosfoss");
-            }
+            // Raygui.GuiLabel(new Rectangle(100, 100, 200, 50), "Test Page");
+            // if (Raygui.GuiButton(new Rectangle(100, 100, 200, 200), "Night") == 1)
+            // {
+            //     Console.WriteLine("hiosfoss");
+            // }
         }
 
         override internal Scene SetNextScene()
         {
-            return null;
+            return j;
         }
 
     }
