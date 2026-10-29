@@ -9,7 +9,6 @@ namespace TwoVTwoTris.Core
     {
         /// <summary>
         /// Runs game logic updates. 
-        ///
         /// Call <cref="GetInputs(params IInputManager[])"/> in this method to use internal input polling for IInputManager members
         /// </summary>
         abstract internal void Update();
@@ -26,7 +25,7 @@ namespace TwoVTwoTris.Core
         abstract internal void UI();
 
         /// <summary>
-        /// 
+        /// Calls input update logic in IInputManager objects 
         /// </summary>
         /// <param name="inputManagers">Pass </param>
         virtual internal void GetInputs(IInputManager[] inputManagers)
