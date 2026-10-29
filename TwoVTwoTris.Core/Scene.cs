@@ -26,7 +26,7 @@ namespace TwoVTwoTris.Core
         abstract internal void UI();
 
         /// <summary>
-        /// 
+        /// Calls input updates for IInputManagers objects
         /// </summary>
         /// <param name="inputManagers">Pass </param>
         virtual internal void GetInputs(IInputManager[] inputManagers)
