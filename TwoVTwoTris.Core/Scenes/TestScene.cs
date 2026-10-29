@@ -1,6 +1,4 @@
-﻿using raygui_cs;
-using Raylib_cs;
-using TwoVTwoTris.Entities;
+﻿using TwoVTwoTris.Entities;
 using TwoVTwoTris.Input;
 namespace TwoVTwoTris.Core.Scenes
 {
@@ -8,7 +6,6 @@ namespace TwoVTwoTris.Core.Scenes
     {
         TestBlock block;
         IInputManager[] i;
-        private Scene j;
 
         internal TestScene() : base()
         {
