@@ -33,7 +33,7 @@ namespace TwoVTwoTris.Core.Scenes
 
         override internal Scene SetNextScene()
         {
-            return j;
+            return null;
         }
 
     }
