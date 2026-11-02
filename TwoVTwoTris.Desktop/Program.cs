@@ -1,6 +1,7 @@
 ﻿using raygui_cs;
 using Raylib_cs;
 using TwoVTwoTris.Core;
+using TwoVTwoTris.Input;
 
 namespace TwoVTwoTris.Desktop
 {
@@ -34,7 +35,8 @@ namespace TwoVTwoTris.Desktop
                 Raylib.EndDrawing();
 
                 game.GetPage(); //get next page
+                
             }
         }
-    }
+    }   
 }

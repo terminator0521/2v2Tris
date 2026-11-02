@@ -4,6 +4,7 @@ namespace TwoVTwoTris.Core.Scenes
 {
     internal class TestScene : Scene
     {
+        
         TestBlock block;
         IInputManager[] i;
 
@@ -33,7 +34,7 @@ namespace TwoVTwoTris.Core.Scenes
 
         override internal Scene SetNextScene()
         {
-            return j;
+            return null;
         }
 
     }
