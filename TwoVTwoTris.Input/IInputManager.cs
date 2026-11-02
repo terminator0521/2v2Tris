@@ -3,5 +3,6 @@
     public interface IInputManager
     {
         public void GetInputs();
+        
     }
 }
