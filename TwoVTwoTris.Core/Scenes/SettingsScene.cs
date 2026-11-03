@@ -15,71 +15,34 @@ namespace TwoVTwoTris.Core.Scenes{
         // Settings State Values
         private Boolean rebindingIndex = false;
         private int position;
-        private float arr;
-        private float das;
-        private float dcd;
-        private float sdf;
 
         private Rectangle panelBounds = new Rectangle(0, 0, 1280, 720);   // The visible viewport
         private Rectangle panelContent = new Rectangle(0, 0, 1280, 2500);   // Total size of your content canvas
         private Vector2? scrollOffset = new Vector2(0, 0);                 // Maintains positions between frames
         private Rectangle? view = new Rectangle(0, 0, 0, 0);               // Automatically managed view rectangle
-
-
-
         private int[] keyCodes;
-
-
-        private int j;
-        private float[] settings= new float[4];
+        private float[] settings = new float[4];
         IInputManager[] i;
 
         string[] inputText = new string[] { "Move Left", "Move Right", "Rotate Clockwise", "Rotate Counter Clockwise", "Rotate 180", "Soft Drop", "Hard Drop", "Hold" };
 
         internal SettingsScene() : base()
         {
+            InputSettings.getInputs();
             keyCodes = new int[] { InputSettings.keyCodeRight
-        ,InputSettings.keyCodeLeft
-         ,InputSettings.keyCodeCW
-         ,InputSettings.keyCodeCCW
-         ,InputSettings.keyCode180
-         ,InputSettings.keyCodeSD
-         ,InputSettings.keyCodeHD
-         ,InputSettings.keyCodeHold};
+            ,InputSettings.keyCodeLeft
+            ,InputSettings.keyCodeCW
+            ,InputSettings.keyCodeCCW
+            ,InputSettings.keyCode180
+            ,InputSettings.keyCodeSD
+            ,InputSettings.keyCodeHD
+            ,InputSettings.keyCodeHold};
 
-            if (Raylib.IsKeyPressed((KeyboardKey)InputSettings.hardDrop))
-            {
-                //
-            }
-            using (StreamReader reader = new StreamReader("data.txt")) {
-                string line;
-                j = 0;
-                while ((line = reader.ReadLine()) != null) {
-                    if (float.TryParse(line, out float result))
-                    {
-                        Console.WriteLine($"Success! Parsed value: {result}");
-                        settings[j] = result;
-                    }
-                    j++;
-                    System.Console.WriteLine(line);
-                }
-                setInputs(settings);
-            }
-        }
+            settings = new float[] { InputSettings.arr
+            ,InputSettings.das
+            ,InputSettings.dcd
+            ,InputSettings.sdf};
 
-        internal void writeInputs(float arr, float das, float dcd, float sdf){
-            using (StreamWriter writer = File.CreateText("data.txt")) {
-                writer.WriteLine($"Arr: {arr}");
-                writer.WriteLine($"Das: {das}");
-                writer.WriteLine($"Dcd: {dcd}");
-                writer.WriteLine($"Sdf: {sdf}.");
-            }
-        }
-        internal void setInputs(float[] inputs){
-            arr = inputs[0];
-            das = inputs[1];
-            dcd = inputs[2];
-            sdf = inputs[3];
         }
 
 
@@ -95,10 +58,6 @@ namespace TwoVTwoTris.Core.Scenes{
 
         internal override void UI()
         {
-
-
-
-
             Rectangle actualView = view.GetValueOrDefault();
             Vector2 actualOffset = scrollOffset.GetValueOrDefault();
 
@@ -111,38 +70,38 @@ namespace TwoVTwoTris.Core.Scenes{
 
             Raygui.GuiScrollPanel(panelBounds, "Settings Panel", panelContent, ref scrollOffset, ref view);
 
-            arr = Raygui.GuiSlider(
+            settings[0] = Raygui.GuiSlider(
                 new Rectangle(contentStartX + 70, contentStartY + 40, 250, 30),
                 "ARR",
-                arr.ToString("0.0"),
-                arr,
+                settings[0].ToString("0.0"),
+                settings[0],
                 0.0f,
                 5.0f
             );
 
-            das = Raygui.GuiSlider(
+            settings[1] = Raygui.GuiSlider(
                 new Rectangle(contentStartX + 70, contentStartY + 100, 250, 30),
-                "DAS",
-                das.ToString("0.0"),
-                das,
+                "das",
+                settings[1].ToString("0.0"),
+                settings[1],
                 0.0f,
                 20.0f
             );
 
-            dcd = Raygui.GuiSlider(
+            settings[2] = Raygui.GuiSlider(
                 new Rectangle(contentStartX + 70, contentStartY + 160, 250, 30),
-                "DCD",
-                dcd.ToString("0.0"),
-                dcd,
+                "dcd",
+                settings[2].ToString("0.0"),
+                settings[2],
                 0.0f,
                 20.0f
             );
 
-            sdf = Raygui.GuiSlider(
+            settings[3] = Raygui.GuiSlider(
                 new Rectangle(contentStartX + 70, contentStartY + 220, 250, 30),
-                "SDF",
-                sdf.ToString("0.0"),
-                sdf,
+                "sdf",
+                settings[3].ToString("0.0"),
+                settings[3],
                 5.0f,
                 40.0f
             );
@@ -182,19 +141,13 @@ namespace TwoVTwoTris.Core.Scenes{
             }
 
             Raylib.EndScissorMode();
-                new Raylib_cs.Rectangle(100, 400, 300, 30)
-                , "SDF"
-                , sdf + ""
-                , sdf
-                , 5.0f
-                , 40.0f
-                );
         }
 
         internal override void Update()
         {
             GetInputs(i);
-            writeInputs(arr,das,dcd,sdf);
+            float[] setsKeys = [..settings, ..keyCodes];
+            InputSettings.writeInputs(setsKeys);
         }
 
         internal override void GetInputs(IInputManager[] inputManagers)
