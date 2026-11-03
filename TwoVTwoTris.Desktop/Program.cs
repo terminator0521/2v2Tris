@@ -31,6 +31,9 @@ namespace TwoVTwoTris.Desktop
                 renderContext.Render(); //draw main renderer to window
                 game.UI(); //draw ui
                 Raygui.GuiSetStyle((int)GuiControl.DEFAULT, (int)GuiDefaultProperty.TEXT_SIZE, 20);
+#if DEBUG
+                Raylib.DrawText($"{Raylib.GetMousePosition()}", 10, 10, 20, Color.Black);
+#endif
                 Raylib.EndDrawing();
 
                 game.GetPage(); //get next page

@@ -14,6 +14,7 @@
     <ProjectReference Include="..\raygui-cs\raygui-cs.csproj" />
     <ProjectReference Include="..\TwoVTwoTris.Entities\TwoVTwoTris.Entities.csproj" />
     <ProjectReference Include="..\TwoVTwoTris.Input\TwoVTwoTris.Input.csproj" />
+    <ProjectReference Include="..\TwoVTwoTris.Lib\TwoVTwoTris.Lib.csproj" />
   </ItemGroup>
 
 </Project>
