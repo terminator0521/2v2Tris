@@ -23,17 +23,5 @@ namespace TwoVTwoTris.Entities
         {
 
         }
-        public void Rotate(Vector2I r)
-        {
-
-        }
-        public void SoftDrop(int d)
-        {
-
-        }
-        public void HardDrop()
-        {
-
-        }
     }
 }

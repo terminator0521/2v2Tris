@@ -11,7 +11,7 @@ namespace TwoVTwoTris.Core.Scenes
 
         internal FreeplayModeScene()
         {
-            _playingBoard = new Rectangle(50, 50, 30 * 10, 30 * 20);
+            _playingBoard = new Rectangle(490, 10, _tileSize * 10, _tileSize * 23);
             _player = new Player(_playingBoard, _tileSize);
         }
 
