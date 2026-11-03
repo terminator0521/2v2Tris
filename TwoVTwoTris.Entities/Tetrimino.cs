@@ -12,6 +12,7 @@ namespace TwoVTwoTris.Entities
         public static float gravity = -1;
         private Texture2D texture;
         int pieceNumber;
+        bool isPlaced;
         public Tetrimino(int x, int y, int[] xShape, int[] yShape, Vector2I rotate, int tile,Texture2D text, int pNum)
         {
             position.x= x;

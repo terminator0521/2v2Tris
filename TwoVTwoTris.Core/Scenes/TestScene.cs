@@ -4,6 +4,7 @@ namespace TwoVTwoTris.Core.Scenes
 {
     internal class TestScene : Scene
     {
+        
         TestBlock block;
         IInputManager[] i;
 

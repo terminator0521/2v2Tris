@@ -3,9 +3,13 @@ using Raylib_cs;
 using TwoVTwoTris.Input;
 using System.Numerics;
 using TwoVTwoTris.Input;
+    using System;
+using System.IO;
+using System.ComponentModel;
+using System.Xml;
+using System.IO.Pipelines;
 
-namespace TwoVTwoTris.Core.Scenes
-{
+namespace TwoVTwoTris.Core.Scenes{
     internal class SettingsScene : Scene
     {
         // Settings State Values
@@ -26,6 +30,8 @@ namespace TwoVTwoTris.Core.Scenes
         private int[] keyCodes;
 
 
+        private int j;
+        private float[] settings= new float[4];
         IInputManager[] i;
 
         string[] inputText = new string[] { "Move Left", "Move Right", "Rotate Clockwise", "Rotate Counter Clockwise", "Rotate 180", "Soft Drop", "Hard Drop", "Hold" };
@@ -45,8 +51,37 @@ namespace TwoVTwoTris.Core.Scenes
             {
                 //
             }
-
+            using (StreamReader reader = new StreamReader("data.txt")) {
+                string line;
+                j = 0;
+                while ((line = reader.ReadLine()) != null) {
+                    if (float.TryParse(line, out float result))
+                    {
+                        Console.WriteLine($"Success! Parsed value: {result}");
+                        settings[j] = result;
+                    }
+                    j++;
+                    System.Console.WriteLine(line);
+                }
+                setInputs(settings);
+            }
         }
+
+        internal void writeInputs(float arr, float das, float dcd, float sdf){
+            using (StreamWriter writer = File.CreateText("data.txt")) {
+                writer.WriteLine($"Arr: {arr}");
+                writer.WriteLine($"Das: {das}");
+                writer.WriteLine($"Dcd: {dcd}");
+                writer.WriteLine($"Sdf: {sdf}.");
+            }
+        }
+        internal void setInputs(float[] inputs){
+            arr = inputs[0];
+            das = inputs[1];
+            dcd = inputs[2];
+            sdf = inputs[3];
+        }
+
 
         internal override void Render()
         {
@@ -147,11 +182,19 @@ namespace TwoVTwoTris.Core.Scenes
             }
 
             Raylib.EndScissorMode();
+                new Raylib_cs.Rectangle(100, 400, 300, 30)
+                , "SDF"
+                , sdf + ""
+                , sdf
+                , 5.0f
+                , 40.0f
+                );
         }
 
         internal override void Update()
         {
             GetInputs(i);
+            writeInputs(arr,das,dcd,sdf);
         }
 
         internal override void GetInputs(IInputManager[] inputManagers)
