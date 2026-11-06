@@ -34,7 +34,7 @@ namespace TwoVTwoTris.Core.Scenes
 
         internal override void Update()
         {
-
+            _player.Update();
         }
     }
 }
