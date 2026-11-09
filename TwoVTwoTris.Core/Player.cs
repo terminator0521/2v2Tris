@@ -41,6 +41,8 @@ namespace TwoVTwoTris.Core
             { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0},
             { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0},
             { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0},
+            { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0},
+            { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0},
         };
 
         //player perceieved gameboard
@@ -79,7 +81,7 @@ namespace TwoVTwoTris.Core
             //update percieved box
             foreach (var pos in _piecePos)
             {
-                currentGameBoard[pos.X, pos.Y] = 1;
+                currentGameBoard[pos.Y, pos.X] = 1;
                 Console.WriteLine($"{pos.X}, {pos.Y}");
             }
 
@@ -107,7 +109,7 @@ namespace TwoVTwoTris.Core
                 {
                     if (currentGameBoard[i, j] != 0)
                     {
-                        Raylib.DrawRectangle((int)_board.X + (i * _tileSize), (int)_board.Y + (j * _tileSize), _tileSize, _tileSize, Color.Red);
+                        Raylib.DrawRectangle((int)_board.X + (j * _tileSize), (int)_board.Y + (i * _tileSize), _tileSize, _tileSize, Color.Red);
                     }
                 }
             }
