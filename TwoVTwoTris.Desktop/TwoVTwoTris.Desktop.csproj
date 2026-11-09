@@ -17,4 +17,10 @@
     <ProjectReference Include="..\TwoVTwoTris.Input\TwoVTwoTris.Input.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <None Update="styles\2v2TrisTextures.rgs">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
 </Project>

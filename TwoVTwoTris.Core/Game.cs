@@ -1,5 +1,5 @@
-﻿using TwoVTwoTris.Core.Scenes;
-
+﻿using raygui_cs;
+using TwoVTwoTris.Core.Scenes;
 
 namespace TwoVTwoTris.Core
 {
@@ -8,7 +8,8 @@ namespace TwoVTwoTris.Core
         Scene _scene; //current page singleton
         public Game()
         {
-            _scene = new FreeplayModeScene();
+            Raygui.GuiLoadStyle("styles/2v2TrisTextures.rgs");
+            _scene = new SettingsScene();
         }
 
         //run game updates
