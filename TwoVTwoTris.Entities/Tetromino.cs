@@ -40,7 +40,7 @@ namespace TwoVTwoTris.Entities
 
         static public Point2D[] NewPiece()
         {
-            return _pieces[0];
+            return (Point2D[])_pieces[0].Clone();
         }
     }
 }

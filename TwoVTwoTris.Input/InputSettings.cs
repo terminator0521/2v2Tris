@@ -2,8 +2,8 @@ namespace TwoVTwoTris.Input;
 
 public static class InputSettings
 {
-    public static int keyCodeRight = 65;
-    public static int keyCodeLeft = 67;
+    public static int keyCodeRight = 262;
+    public static int keyCodeLeft = 263;
     public static int keyCodeCW = 68;
     public static int keyCodeCCW = 1;
     public static int keyCode180 = 1;

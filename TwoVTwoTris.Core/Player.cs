@@ -13,7 +13,7 @@ namespace TwoVTwoTris.Core
         private int _holdingPiece;
         private int _tileSize;
         private Point2D[] _piecePos = new Point2D[4];
-        private float _dropTime = 1.5f;
+        private float _dropTime = 0.2f;
         private float _dropTimeWaited = 0f;
 
 
@@ -42,7 +42,7 @@ namespace TwoVTwoTris.Core
             { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0},
             { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0},
             { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0},
-            { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0},
+            { 0, 0, 0, 1, 0, 0, 0, 0, 0, 0},
         };
 
         //player perceieved gameboard
@@ -55,34 +55,49 @@ namespace TwoVTwoTris.Core
         {
             _board = rect;
             _tileSize = tileSize;
+            SetNewPiece();
             currentGameBoard = (int[,])_realGameBoard.Clone();
-
-            _piecePos = Tetromino.NewPiece();
         }
 
         internal void Update()
         {
-
+            Console.WriteLine(_piecePos[0].Y);
             //block falling logic
             if (_dropTimeWaited > _dropTime)
             {
-                currentGameBoard = (int[,])_realGameBoard.Clone();
                 _dropTimeWaited = 0f;
-                for (int i = 0; i < _piecePos.Length; i++)
+                for (int i = 0; i < _piecePos.Length; i++) //update every tile
                 {
-                    _piecePos[i].Y += 1;
+                    if (_realGameBoard[_piecePos[i].Y + 1, _piecePos[i].X] != 0) //check below block
+                    {
+                        for (int j = i; j < _piecePos.Length; j++) //place right side tiles
+                        {
+                            _realGameBoard[_piecePos[j].Y, _piecePos[j].X] = 1;
+                        }
+
+                        for (int j = 0; j < i; j++) //place left side tiles
+                        {
+                            _realGameBoard[_piecePos[j].Y - 1, _piecePos[j].X] = 1;
+                        }
+                        SetNewPiece();
+                        break;
+                    }
+                    else
+                    {
+                        _piecePos[i].Y += 1;
+                    }
                 }
             }
             else
             {
                 _dropTimeWaited += Raylib.GetFrameTime();
             }
+            currentGameBoard = (int[,])_realGameBoard.Clone();
 
             //update percieved box
             foreach (var pos in _piecePos)
             {
                 currentGameBoard[pos.Y, pos.X] = 1;
-                Console.WriteLine($"{pos.X}, {pos.Y}");
             }
 
         }
@@ -103,6 +118,7 @@ namespace TwoVTwoTris.Core
                 }
             }
 
+            //render current piece
             for (int i = 0; i < currentGameBoard.GetLength(0); i++)
             {
                 for (int j = 0; j < currentGameBoard.GetLength(1); j++)
@@ -116,10 +132,21 @@ namespace TwoVTwoTris.Core
         }
         public void GetInputs()
         {
+            if (Raylib.IsKeyPressed(KeyboardKey.Right))
+                for (int i = 0; i < _piecePos.Length; i++)
+                    _piecePos[i].X++;
+            if (Raylib.IsKeyPressed((KeyboardKey)InputSettings.keyCodeLeft))
+                for (int i = 0; i < _piecePos.Length; i++)
+                    _piecePos[i].X--;
 
         }
 
-        private void GetNextPiece()
+        private void SetNewPiece()
+        {
+            _piecePos = Tetromino.NewPiece();
+        }
+
+        private void Fall()
         {
 
         }
