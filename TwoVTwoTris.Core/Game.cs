@@ -9,7 +9,7 @@ namespace TwoVTwoTris.Core
         public Game()
         {
             Raygui.GuiLoadStyle("styles/2v2TrisTextures.rgs");
-            _scene = new SettingsScene();
+            _scene = new FreeplayModeScene();
         }
 
         //run game updates
