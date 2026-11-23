@@ -65,10 +65,10 @@ namespace TwoVTwoTris.Core
 
         internal void Update()
         {
-            Console.WriteLine(_piecePos[0].Y);
             //block falling logic
             if (_dropTimeWaited > _dropTime)
             {
+
                 _dropTimeWaited = 0f;
                 for (int i = 0; i < _piecePos.Length; i++) //update every tile
                 {
@@ -97,9 +97,11 @@ namespace TwoVTwoTris.Core
                     }
                     catch (IndexOutOfRangeException)
                     {
-                        if ()
-                            for (int j = 0; j < _piecePos.Length; j++)
-                                SetNewPiece();
+                        for (int j = 0; j < _piecePos.Length; j++)
+                        {
+                            SetNewPiece();
+                            _realGameBoard[_previousPiecePos[j].Y, _previousPiecePos[j].X] = 1;
+                        }
                         i = 4; //end the each tile loop
                         currentGameBoard = (int[,])_realGameBoard.Clone();
                     }
@@ -149,11 +151,11 @@ namespace TwoVTwoTris.Core
         }
         public void GetInputs()
         {
+            _previousPiecePos = (Point2D[])_piecePos.Clone();
             try
             {
                 if (Raylib.IsKeyPressed(KeyboardKey.Right))
                 {
-                    _previousPiecePos = (Point2D[])_piecePos.Clone();
                     for (int i = 0; i < _piecePos.Length; i++)
                         if (_realGameBoard[_piecePos[i].Y, _piecePos[i].X + 1] != 0)
                         {
@@ -180,7 +182,7 @@ namespace TwoVTwoTris.Core
                         }
                 }
             }
-            catch (IndexOutOfRangeException)
+            catch (IndexOutOfRangeException) //undo move if horizontally out of bounds
             {
                 UndoMove();
             }
