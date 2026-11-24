@@ -9,13 +9,12 @@ namespace TwoVTwoTris.Core
         internal bool IsAlive { get; private set; }
         internal int Score { get; private set; }
         private Rectangle _board;
-        private int[,] _currentPiece;
-        private int _holdingPiece;
         private int _tileSize;
         private Point2D[] _previousPiecePos = new Point2D[4];
         private Point2D[] _piecePos = new Point2D[4];
         private float _dropTime = 0.2f;
         private float _dropTimeWaited = 0f;
+        private int _pieceRotationState = 0;
 
 
         //internal game board matrix
@@ -43,7 +42,7 @@ namespace TwoVTwoTris.Core
             { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0},
             { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0},
             { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0},
-            { 1, 0, 0, 0, 0, 0, 0, 0, 0, 0},
+            { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0},
         };
 
         //player perceieved gameboard
@@ -57,8 +56,8 @@ namespace TwoVTwoTris.Core
             _board = rect;
             _tileSize = tileSize;
             //set stuff
-            _piecePos = Tetromino.NewPiece();
-            _previousPiecePos = Tetromino.NewPiece();
+            Tetromino.SetNewPiece(out _piecePos);
+            Tetromino.SetNewPiece(out _previousPiecePos);
             //clone gameboard
             currentGameBoard = (int[,])_realGameBoard.Clone();
         }
@@ -72,39 +71,37 @@ namespace TwoVTwoTris.Core
                 _dropTimeWaited = 0f;
                 for (int i = 0; i < _piecePos.Length; i++) //update every tile
                 {
-                    try
-                    {
-                        //place if tile below block is not empty
-                        if (_realGameBoard[_piecePos[i].Y + 1, _piecePos[i].X] != 0)
-                        {
-                            for (int j = i; j < _piecePos.Length; j++) //place right side tiles
-                            {
-                                _realGameBoard[_piecePos[j].Y, _piecePos[j].X] = 1;
-                            }
 
-                            for (int j = 0; j < i; j++) //place left side tiles
-                            {
-                                _realGameBoard[_piecePos[j].Y - 1, _piecePos[j].X] = 1;
-                            }
-                            SetNewPiece();
-                            break;
-                        }
-                        else
-                        {
-                            //move down
-                            _piecePos[i].Y += 1;
-                        }
-                    }
-                    catch (IndexOutOfRangeException)
+                    if (_piecePos[i].Y == _realGameBoard.GetLength(0) - 1) //check if piece is at lowest point of board
                     {
                         for (int j = 0; j < _piecePos.Length; j++)
                         {
-                            SetNewPiece();
+                            _pieceRotationState = 0;
                             _realGameBoard[_previousPiecePos[j].Y, _previousPiecePos[j].X] = 1;
                         }
-                        i = 4; //end the each tile loop
-                        currentGameBoard = (int[,])_realGameBoard.Clone();
+                        SetNewPiece();
+                        break;
                     }
+                    else if (_realGameBoard[_piecePos[i].Y + 1, _piecePos[i].X] != 0) //place if tile below block is not empty
+                    {
+                        for (int j = i; j < _piecePos.Length; j++) //place right side tiles
+                        {
+                            _realGameBoard[_piecePos[j].Y, _piecePos[j].X] = 1;
+                        }
+
+                        for (int j = 0; j < i; j++) //place left side tiles
+                        {
+                            _realGameBoard[_piecePos[j].Y - 1, _piecePos[j].X] = 1;
+                        }
+                        SetNewPiece();
+                        break;
+                    }
+                    else
+                    {
+                        //move down
+                        _piecePos[i].Y += 1;
+                    }
+
                 }
             }
             else
@@ -114,11 +111,11 @@ namespace TwoVTwoTris.Core
             currentGameBoard = (int[,])_realGameBoard.Clone();
 
             //update percieved box
+
             foreach (var pos in _piecePos)
             {
                 currentGameBoard[pos.Y, pos.X] = 1;
             }
-
         }
 
         internal void Render()
@@ -152,51 +149,83 @@ namespace TwoVTwoTris.Core
         public void GetInputs()
         {
             _previousPiecePos = (Point2D[])_piecePos.Clone();
-            try
+            //right left movement
+
+            if (Raylib.IsKeyPressed(KeyboardKey.Right))
             {
-                if (Raylib.IsKeyPressed(KeyboardKey.Right))
-                {
-                    for (int i = 0; i < _piecePos.Length; i++)
-                        if (_realGameBoard[_piecePos[i].Y, _piecePos[i].X + 1] != 0)
-                        {
-                            UndoMove();
-                            break;
-                        }
-                        else
-                        {
-                            _piecePos[i].X++;
-                        }
-                }
-                if (Raylib.IsKeyPressed((KeyboardKey)InputSettings.keyCodeLeft))
-                {
-                    _previousPiecePos = (Point2D[])_piecePos.Clone();
-                    for (int i = 0; i < _piecePos.Length; i++)
-                        if (_realGameBoard[_piecePos[i].Y, _piecePos[i].X - 1] != 0)
-                        {
-                            UndoMove();
-                            break;
-                        }
-                        else
-                        {
-                            _piecePos[i].X--;
-                        }
-                }
+                for (int i = 0; i < _piecePos.Length; i++)
+                    if (_piecePos[i].X == _realGameBoard.GetLength(1) - 1) //check if at edge
+                    {
+                        UndoMove();
+                        break;
+                    }
+                    else if (_realGameBoard[_piecePos[i].Y, _piecePos[i].X + 1] != 0) //check if neighbour space is taken
+                    {
+                        UndoMove();
+                        break;
+                    }
+                    else //move
+                    {
+                        _piecePos[i].X++;
+                    }
             }
-            catch (IndexOutOfRangeException) //undo move if horizontally out of bounds
+            else if (Raylib.IsKeyPressed((KeyboardKey)InputSettings.keyCodeLeft))
             {
-                UndoMove();
+                _previousPiecePos = (Point2D[])_piecePos.Clone();
+                for (int i = 0; i < _piecePos.Length; i++) 
+                    if (_piecePos[i].X == 0) //check if at edge 
+                    {
+                        UndoMove();
+                        break;
+                    }
+                    else if (_realGameBoard[_piecePos[i].Y, _piecePos[i].X - 1] != 0) //check if neighbour space is taken
+                    {
+                        UndoMove();
+                        break;
+                    }
+                    else //move
+                    {
+                        _piecePos[i].X--;
+                    }
             }
 
+
+
+            // rotate
+            if (Raylib.IsKeyPressed(KeyboardKey.Up))
+            {
+                ApplyRotation(1);
+            }
+            if (Raylib.IsKeyPressed(KeyboardKey.Z))
+            {
+                ApplyRotation(-1);
+            }
         }
 
         private void SetNewPiece()
         {
-            _piecePos = Tetromino.NewPiece();
+            Tetromino.SetNewPiece(out _piecePos);
         }
 
         private void UndoMove()
         {
             _piecePos = (Point2D[])_previousPiecePos.Clone();
+        }
+
+
+        private void ApplyRotation(int rotation)
+        {
+
+            _pieceRotationState += (rotation + 4) % 4;
+            for (int i = 0; i < _piecePos.Length; i++)
+            {
+                if (rotation < 0)
+                    _piecePos[i] -= Tetromino._rotations[0][(_pieceRotationState + 4) % 4][i];
+                if (rotation > 0)
+                    _piecePos[i] += Tetromino._rotations[0][_pieceRotationState % 4][i];
+            }
+
+
         }
     }
 }

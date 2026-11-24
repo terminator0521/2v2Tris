@@ -33,14 +33,29 @@ namespace TwoVTwoTris.Entities
          * 0 0 0 1 1 1 0 0 0 0 
          */
 
-        static private Point2D[][] _pieces =
+        readonly static private Point2D[][] _origin =
         {
-            new Point2D[] {new Point2D(3, 2), new Point2D(4, 2), new Point2D(5, 2), new Point2D(6, 2)}
+            [new Point2D(3, 2), new Point2D(4, 2), new Point2D(5, 2), new Point2D(6, 2)]
         };
 
-        static public Point2D[] NewPiece()
+        static public void SetNewPiece(out Point2D[] piece)
         {
-            return (Point2D[])_pieces[0].Clone();
+            piece = (Point2D[])_origin[0].Clone();
         }
+
+        //piece type | rotation state | block index
+
+        //add to go clockwise, which increase 
+        readonly static public Point2D[][][] _rotations =
+        {
+            //I piece
+            [
+                [new(-1, -2), new(0, -1), new(1, 0), new(2, 1)],
+                [new(2, -1), new(1, 0), new(0, 1), new(-1, 2)],
+                [new(1, 2), new(0, 1), new(-1, 0), new(-2, -1)],
+                [new(-2, 1), new(-1, 0), new(0, -1), new(1, -2)],
+            ],
+
+        };
     }
 }
