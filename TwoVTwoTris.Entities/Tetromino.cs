@@ -38,15 +38,10 @@ namespace TwoVTwoTris.Entities
             [new Point2D(3, 2), new Point2D(4, 2), new Point2D(5, 2), new Point2D(6, 2)]
         };
 
-        static public void SetNewPiece(out Point2D[] piece)
-        {
-            piece = (Point2D[])_origin[0].Clone();
-        }
-
         //piece type | rotation state | block index
 
         //add to go clockwise, which increase 
-        readonly static public Point2D[][][] _rotations =
+        readonly static private Point2D[][][] _rotations =
         {
             //I piece
             [
@@ -57,5 +52,33 @@ namespace TwoVTwoTris.Entities
             ],
 
         };
+
+        static public void ApplyRotation(ref int rotationState, ref Point2D[] piece, int rotation)
+        {
+            rotationState += rotation;
+            for (int i = 0; i < piece.Length; i++)
+            {
+                if (rotation < 0)
+                {
+                    piece[i] -= _rotations[0][((rotationState + 1) + 4) % 4][i];
+                }
+                else if (rotation > 0)
+                {
+                    piece[i] += _rotations[0][rotationState % 4][i];
+                }
+            }
+
+            if (rotationState > 3 || rotationState < 0)
+            {
+                rotationState = (rotationState + 4) % 4;
+            }
+        }
+
+        static public void SetNewPiece(out Point2D[] piece)
+        {
+            piece = (Point2D[])_origin[0].Clone();
+        }
+
+       
     }
 }

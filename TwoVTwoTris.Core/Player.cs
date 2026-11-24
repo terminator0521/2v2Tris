@@ -194,11 +194,11 @@ namespace TwoVTwoTris.Core
             // rotate
             if (Raylib.IsKeyPressed(KeyboardKey.Up))
             {
-                ApplyRotation(1);
+                Tetromino.ApplyRotation(ref _pieceRotationState, ref _piecePos, 1);
             }
             if (Raylib.IsKeyPressed(KeyboardKey.Z))
             {
-                ApplyRotation(-1);
+                Tetromino.ApplyRotation(ref _pieceRotationState, ref _piecePos, -1);
             }
         }
 
@@ -212,27 +212,5 @@ namespace TwoVTwoTris.Core
             _piecePos = (Point2D[])_previousPiecePos.Clone();
         }
 
-
-        private void ApplyRotation(int rotation)
-        {
-            _pieceRotationState += rotation;
-            for (int i = 0; i < _piecePos.Length; i++)
-            {
-                if (rotation < 0)
-                {
-                    _piecePos[i] -= Tetromino._rotations[0][((_pieceRotationState + 1) + 4) % 4][i];
-                }
-                else if (rotation > 0)
-                {
-                    _piecePos[i] += Tetromino._rotations[0][_pieceRotationState % 4][i];
-                }
-            }
-
-            if (_pieceRotationState > 3 || _pieceRotationState < 0)
-            {
-                _pieceRotationState = (_pieceRotationState + 4) % 4;
-            }
-
-        }
     }
 }
