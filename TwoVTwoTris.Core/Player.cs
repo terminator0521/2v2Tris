@@ -172,7 +172,7 @@ namespace TwoVTwoTris.Core
             else if (Raylib.IsKeyPressed((KeyboardKey)InputSettings.keyCodeLeft))
             {
                 _previousPiecePos = (Point2D[])_piecePos.Clone();
-                for (int i = 0; i < _piecePos.Length; i++) 
+                for (int i = 0; i < _piecePos.Length; i++)
                     if (_piecePos[i].X == 0) //check if at edge 
                     {
                         UndoMove();
@@ -215,16 +215,23 @@ namespace TwoVTwoTris.Core
 
         private void ApplyRotation(int rotation)
         {
-
-            _pieceRotationState += (rotation + 4) % 4;
+            _pieceRotationState += rotation;
             for (int i = 0; i < _piecePos.Length; i++)
             {
                 if (rotation < 0)
-                    _piecePos[i] -= Tetromino._rotations[0][(_pieceRotationState + 4) % 4][i];
-                if (rotation > 0)
+                {
+                    _piecePos[i] -= Tetromino._rotations[0][((_pieceRotationState + 1) + 4) % 4][i];
+                }
+                else if (rotation > 0)
+                {
                     _piecePos[i] += Tetromino._rotations[0][_pieceRotationState % 4][i];
+                }
             }
 
+            if (_pieceRotationState > 3 || _pieceRotationState < 0)
+            {
+                _pieceRotationState = (_pieceRotationState + 4) % 4;
+            }
 
         }
     }
