@@ -2,6 +2,8 @@ using TwoVTwoTris.Lib;
 
 namespace TwoVTwoTris.Entities
 {
+
+
     static public class Tetromino
     {
         /*
@@ -32,7 +34,8 @@ namespace TwoVTwoTris.Entities
          * 0 0 0 0 1 0 0 0 0 0
          * 0 0 0 1 1 1 0 0 0 0 
          */
-
+        private static int width;
+        private static int height;
         readonly static private Point2D[][] _origin =
         {
             [new Point2D(3, 2), new Point2D(4, 2), new Point2D(5, 2), new Point2D(6, 2)]
@@ -41,7 +44,7 @@ namespace TwoVTwoTris.Entities
         //piece type | rotation state | block index
 
         //add to go clockwise, which increase 
-        readonly static private Point2D[][][] _rotations =
+        readonly static public Point2D[][][] rotations =
         {
             //I piece
             [
@@ -53,32 +56,24 @@ namespace TwoVTwoTris.Entities
 
         };
 
-        static public void ApplyRotation(ref int rotationState, ref Point2D[] piece, int rotation)
-        {
-            rotationState += rotation;
-            for (int i = 0; i < piece.Length; i++)
-            {
-                if (rotation < 0)
-                {
-                    piece[i] -= _rotations[0][((rotationState + 1) + 4) % 4][i];
-                }
-                else if (rotation > 0)
-                {
-                    piece[i] += _rotations[0][rotationState % 4][i];
-                }
-            }
 
-            if (rotationState > 3 || rotationState < 0)
-            {
-                rotationState = (rotationState + 4) % 4;
-            }
-        }
 
         static public void SetNewPiece(out Point2D[] piece)
         {
             piece = (Point2D[])_origin[0].Clone();
         }
 
-       
+        static public void InitBoard(int width, int height)
+        {
+            Tetromino.width = width;
+            Tetromino.height = height;
+        }
+
+        static public bool Kick()
+        {
+
+
+            return false;
+        }
     }
 }
