@@ -4,6 +4,8 @@ using TwoVTwoTris.Lib;
 
 namespace TwoVTwoTris.Entities
 {
+
+
     static public class Tetromino
     {
         /*
@@ -34,16 +36,23 @@ namespace TwoVTwoTris.Entities
          * 0 0 0 0 1 0 0 0 0 0
          * 0 0 0 1 1 1 0 0 0 0 
          */
-
+        private static int width;
+        private static int height;
         readonly static private Point2D[][] _origin =
         {
-            [new Point2D(3, 2), new Point2D(4, 2), new Point2D(5, 2), new Point2D(6, 2)]
+            [new Point2D(3, 2), new Point2D(4, 2), new Point2D(5, 2), new Point2D(6, 2)], //i piece
+            [new Point2D(4, 1), new Point2D(5, 1), new Point2D(4, 2), new Point2D(5, 2)], //o piece
+            [new Point2D(3, 1), new Point2D(3, 2), new Point2D(4, 2), new Point2D(5, 2)], //l piece
+            [new Point2D(5, 1), new Point2D(3, 2), new Point2D(4, 2), new Point2D(5, 2)], //j piece
+            [new Point2D(4, 1), new Point2D(5, 1), new Point2D(3, 2), new Point2D(4, 2)], //s piece
+            [new Point2D(3, 1), new Point2D(4, 1), new Point2D(4, 2), new Point2D(5, 2)], //z piece
+            [new Point2D(4, 1), new Point2D(3, 2), new Point2D(4, 2), new Point2D(5, 2)], //z piece
         };
 
         //Indicies -> piece type | rotation state | block index
 
         //add to go clockwise, which increase 
-        readonly static private Point2D[][][] _rotations =
+        readonly static public Point2D[][][] rotations =
         {
             //I piece
             [
@@ -52,7 +61,6 @@ namespace TwoVTwoTris.Entities
                 [new(1, 2), new(0, 1), new(-1, 0), new(-2, -1)],
                 [new(-2, 1), new(-1, 0), new(0, -1), new(1, -2)],
             ],
-
         };
 
         static public void ApplyRotation(ref int rotationState, ref Point2D[] piece, ref int[,] gameB, int rotation)
@@ -149,17 +157,19 @@ namespace TwoVTwoTris.Entities
 
             }
 
-            if (rotationState > 3 || rotationState < 0)
-            {
-                rotationState = (rotationState + 4) % 4;
-            }
         }
 
-        static public void SetNewPiece(out Point2D[] piece)
+        static public void InitBoard(int width, int height)
         {
-            piece = (Point2D[])_origin[0].Clone();
+            Tetromino.width = width;
+            Tetromino.height = height;
         }
 
-       
+        static public bool Kick()
+        {
+
+
+            return false;
+        }
     }
 }

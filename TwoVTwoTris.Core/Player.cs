@@ -67,16 +67,15 @@ namespace TwoVTwoTris.Core
             //block falling logic
             if (_dropTimeWaited > _dropTime)
             {
-
                 _dropTimeWaited = 0f;
                 for (int i = 0; i < _piecePos.Length; i++) //update every tile
                 {
 
                     if (_piecePos[i].Y == _realGameBoard.GetLength(0) - 1) //check if piece is at lowest point of board
                     {
+                        _pieceRotationState = 0;
                         for (int j = 0; j < _piecePos.Length; j++)
                         {
-                            _pieceRotationState = 0;
                             _realGameBoard[_previousPiecePos[j].Y, _previousPiecePos[j].X] = 1;
                         }
                         SetNewPiece();
@@ -84,6 +83,7 @@ namespace TwoVTwoTris.Core
                     }
                     else if (_realGameBoard[_piecePos[i].Y + 1, _piecePos[i].X] != 0) //place if tile below block is not empty
                     {
+                        _pieceRotationState = 0;
                         for (int j = i; j < _piecePos.Length; j++) //place right side tiles
                         {
                             _realGameBoard[_piecePos[j].Y, _piecePos[j].X] = 1;
@@ -194,15 +194,33 @@ namespace TwoVTwoTris.Core
             // rotate
             if (Raylib.IsKeyPressed(KeyboardKey.Up))
             {
-                Tetromino.ApplyRotation(ref _pieceRotationState, ref _piecePos, ref _realGameBoard,1);
-                
+                ApplyRotation(1);
             }
             if (Raylib.IsKeyPressed(KeyboardKey.Z))
             {
-                Tetromino.ApplyRotation(ref _pieceRotationState, ref _piecePos, ref _realGameBoard,-1);
+                ApplyRotation(-1);
             }
         }
-
+        
+        private void ApplyRotation(int rotation)
+        {
+            _pieceRotationState += rotation;
+            for (int i = 0; i < _piecePos.Length; i++)
+            {
+                if (rotation < 0)
+                {
+                    _piecePos[i] -= Tetromino.rotations[0][((_pieceRotationState + 1) + 4) % 4][i];
+                }
+                else if (rotation > 0)
+                {
+                    _piecePos[i] += Tetromino.rotations[0][_pieceRotationState % 4][i];
+                }
+            }
+            if (_pieceRotationState > 3 || _pieceRotationState < 0)
+            {
+                _pieceRotationState = (_pieceRotationState + 4) % 4;
+            }
+        }
         private void SetNewPiece()
         {
             Tetromino.SetNewPiece(out _piecePos);
