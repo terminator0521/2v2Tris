@@ -38,7 +38,13 @@ namespace TwoVTwoTris.Entities
         private static int height;
         readonly static private Point2D[][] _origin =
         {
-            [new Point2D(3, 2), new Point2D(4, 2), new Point2D(5, 2), new Point2D(6, 2)]
+            [new Point2D(3, 2), new Point2D(4, 2), new Point2D(5, 2), new Point2D(6, 2)], //i piece
+            [new Point2D(4, 1), new Point2D(5, 1), new Point2D(4, 2), new Point2D(5, 2)], //o piece
+            [new Point2D(3, 1), new Point2D(3, 2), new Point2D(4, 2), new Point2D(5, 2)], //l piece
+            [new Point2D(5, 1), new Point2D(3, 2), new Point2D(4, 2), new Point2D(5, 2)], //j piece
+            [new Point2D(4, 1), new Point2D(5, 1), new Point2D(3, 2), new Point2D(4, 2)], //s piece
+            [new Point2D(3, 1), new Point2D(4, 1), new Point2D(4, 2), new Point2D(5, 2)], //z piece
+            [new Point2D(4, 1), new Point2D(3, 2), new Point2D(4, 2), new Point2D(5, 2)], //z piece
         };
 
         //piece type | rotation state | block index
@@ -53,14 +59,13 @@ namespace TwoVTwoTris.Entities
                 [new(1, 2), new(0, 1), new(-1, 0), new(-2, -1)],
                 [new(-2, 1), new(-1, 0), new(0, -1), new(1, -2)],
             ],
-
         };
-
 
 
         static public void SetNewPiece(out Point2D[] piece)
         {
-            piece = (Point2D[])_origin[0].Clone();
+            piece = (Point2D[])_origin[6].Clone();
+
         }
 
         static public void InitBoard(int width, int height)
