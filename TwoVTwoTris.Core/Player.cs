@@ -194,11 +194,12 @@ namespace TwoVTwoTris.Core
             // rotate
             if (Raylib.IsKeyPressed(KeyboardKey.Up))
             {
-                Tetromino.ApplyRotation(ref _pieceRotationState, ref _piecePos, 1);
+                Tetromino.ApplyRotation(ref _pieceRotationState, ref _piecePos, ref _realGameBoard,1);
+                
             }
             if (Raylib.IsKeyPressed(KeyboardKey.Z))
             {
-                Tetromino.ApplyRotation(ref _pieceRotationState, ref _piecePos, -1);
+                Tetromino.ApplyRotation(ref _pieceRotationState, ref _piecePos, ref _realGameBoard,-1);
             }
         }
 

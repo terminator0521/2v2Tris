@@ -1,3 +1,4 @@
+using System.Drawing;
 using TwoVTwoTris.Lib;
 
 namespace TwoVTwoTris.Entities
@@ -38,7 +39,7 @@ namespace TwoVTwoTris.Entities
             [new Point2D(3, 2), new Point2D(4, 2), new Point2D(5, 2), new Point2D(6, 2)]
         };
 
-        //piece type | rotation state | block index
+        //Indicies -> piece type | rotation state | block index
 
         //add to go clockwise, which increase 
         readonly static private Point2D[][][] _rotations =
@@ -53,18 +54,53 @@ namespace TwoVTwoTris.Entities
 
         };
 
-        static public void ApplyRotation(ref int rotationState, ref Point2D[] piece, int rotation)
+        static public void ApplyRotation(ref int rotationState, ref Point2D[] piece, ref int[,] gameB,int rotation)
         {
+            Point2D[] prevPiece=(Point2D[])piece.Clone();
             rotationState += rotation;
             for (int i = 0; i < piece.Length; i++)
             {
+                // rotate counterclockwise
                 if (rotation < 0)
                 {
                     piece[i] -= _rotations[0][((rotationState + 1) + 4) % 4][i];
                 }
+                // rotate clockwise
                 else if (rotation > 0)
                 {
                     piece[i] += _rotations[0][rotationState % 4][i];
+                    int checks = 0;
+                    Point2D[] modifications = [new(0,0),new(-2,0),new(+1,0),new(-2,-1),new(1,2)];
+
+                    for(int j = 0; j < 4; j++)
+                    {
+                        //itterate through each block of the piece's location
+                        for(int k = 0; k < 5; k++)
+                        {
+                            piece[j] += modifications[k];
+                            //check if it is a possible locate, addiding to checks
+                            // if colliding with game object or out of bounds
+                            if (gameB[piece[j].X, piece[j].Y] == 0)
+                            {
+                                
+                            }
+                            if (piece[j].Y < gameB.Length)
+                            {
+                                
+                            }
+                            if (piece[j].X < gameB.GetLength(1))
+                            {
+                                
+                            }
+                        }
+
+
+                    }
+                    if (checks == 4)
+                    {
+                        
+                    }
+
                 }
             }
 
