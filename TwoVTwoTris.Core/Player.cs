@@ -201,6 +201,7 @@ namespace TwoVTwoTris.Core
                 ApplyRotation(-1);
             }
         }
+        
         private void ApplyRotation(int rotation)
         {
             _pieceRotationState += rotation;
