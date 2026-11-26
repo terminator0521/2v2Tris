@@ -54,51 +54,95 @@ namespace TwoVTwoTris.Entities
 
         };
 
-        static public void ApplyRotation(ref int rotationState, ref Point2D[] piece, ref int[,] gameB,int rotation)
+        static public void ApplyRotation(ref int rotationState, ref Point2D[] piece, ref int[,] gameB, int rotation)
         {
             Point2D[] prevPiece=(Point2D[])piece.Clone();
+            Point2D[][] modificationsCW = {
+                [new(0,0),new(-1,0),new(-1,1),new(0,-2),new(-1,-2)],
+                [new(0,0),new(+1,0),new(+1,-1),new(0,+2),new(1,2)],
+                [new(0,0),new(1,0),new(+1,1),new(0,-2),new(1,-2)],
+                [new(0,0),new(-1,0),new(-1,-1),new(0,2),new(-1,+2)],
+            };
+            Point2D[][] modificationsCC = {
+                [new(0,0),new(1,0),new(+1,-1),new(0,2),new(1,2)],
+                [new(0,0),new(-1,0),new(-1,+1),new(0,-2),new(-1,-2)],
+                [new(0,0),new(-1,0),new(-1,-1),new(0,+2),new(-1,2)],
+                [new(0,0),new(1,0),new(1,+1),new(0,-2),new(-1,2)],
+            };
+            Point2D[][] modificationsCWI = {
+                [new(0,0), new(-2,0), new(+1,0), new(-2,-1), new(+1,+2)], // 0->R
+                [new(0,0), new(-1,0), new(+2,0), new(-1,+2), new(+2,-1)], // R->2
+                [new(0,0), new(+2,0), new(-1,0), new(+2,+1), new(-1,-2)], // 2->L
+                [new(0,0), new(+1,0), new(-2,0), new(+1,-2), new(-2,+1)], // L->0
+            };
+
+            Point2D[][] modificationsCCI = {
+                [new(0,0), new(-1,0), new(+2,0), new(-1,+2), new(+2,-1)], // 0->L
+                [new(0,0), new(-2,0), new(+1,0), new(-2,-1), new(+1,+2)], // L->2
+                [new(0,0), new(+1,0), new(-2,0), new(+1,-2), new(-2,+1)], // 2->R
+                [new(0,0), new(+2,0), new(-1,0), new(+2,+1), new(-1,-2)], // R->0
+            };
             rotationState += rotation;
             for (int i = 0; i < piece.Length; i++)
             {
                 // rotate counterclockwise
                 if (rotation < 0)
                 {
-                    piece[i] -= _rotations[0][((rotationState + 1) + 4) % 4][i];
+                    //piece[i] += _rotations[0][rotationState % 4][i];
+                    int checks = 0;
+
+                    // iterate through each test
+                    for(int j = 0; j < 5; j++)
+                    {
+                        // iterate through each square of the tetrimino
+                        for(int k = 0; k < 4; k++)
+                        {
+                            piece[k] += modificationsCC[rotationState-1][j];
+                            //check if it is a possible locate, addiding to checks
+                            // if colliding with game object or out of bounds
+                            if ((gameB[piece[k].Y, piece[k].X] == 0) && (piece[k].X < gameB.GetLength(1)||piece[k].Y < gameB.Length))
+                            {
+                                checks++;
+                            }
+                        }
+                        if (checks == 4){
+                            break;
+                        } 
+                        else
+                        {
+                            checks = 0;
+                            piece = prevPiece;
+                        }
+                    }
                 }
                 // rotate clockwise
                 else if (rotation > 0)
                 {
-                    piece[i] += _rotations[0][rotationState % 4][i];
+                    //piece[i] += _rotations[0][rotationState % 4][i];
                     int checks = 0;
-                    Point2D[] modifications = [new(0,0),new(-2,0),new(+1,0),new(-2,-1),new(1,2)];
 
-                    for(int j = 0; j < 4; j++)
+                    // iterate through each test
+                    for(int j = 0; j < 5; j++)
                     {
-                        //itterate through each block of the piece's location
-                        for(int k = 0; k < 5; k++)
+                        // iterate through each square of the tetrimino
+                        for(int k = 0; k < 4; k++)
                         {
-                            piece[j] += modifications[k];
+                            piece[k] += modificationsCW[rotationState-1][j];
                             //check if it is a possible locate, addiding to checks
                             // if colliding with game object or out of bounds
-                            if (gameB[piece[j].X, piece[j].Y] == 0)
+                            if ((gameB[piece[k].X, piece[k].Y] == 0) && (piece[k].X < gameB.GetLength(1)||piece[k].Y < gameB.Length))
                             {
-                                
-                            }
-                            if (piece[j].Y < gameB.Length)
-                            {
-                                
-                            }
-                            if (piece[j].X < gameB.GetLength(1))
-                            {
-                                
+                                checks++;
                             }
                         }
-
-
-                    }
-                    if (checks == 4)
-                    {
-                        
+                        if (checks == 4){
+                            break;
+                        } 
+                        else
+                        {
+                            checks = 0;
+                            piece = prevPiece;
+                        }
                     }
 
                 }
