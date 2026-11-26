@@ -1,4 +1,5 @@
 using System.Drawing;
+using System.Reflection.Metadata;
 using TwoVTwoTris.Lib;
 
 namespace TwoVTwoTris.Entities
@@ -56,6 +57,8 @@ namespace TwoVTwoTris.Entities
 
         static public void ApplyRotation(ref int rotationState, ref Point2D[] piece, ref int[,] gameB, int rotation)
         {
+            // if false, not i piece, if true, i piece
+            bool pieceType = (piece[0].X==piece[1].X && piece[1].X==piece[2].X && piece[2].X==piece[3].X)||(piece[0].Y==piece[1].Y && piece[1].Y==piece[2].Y && piece[2].Y==piece[3].Y);
             Point2D[] prevPiece=(Point2D[])piece.Clone();
             Point2D[][] modificationsCW = {
                 [new(0,0),new(-1,0),new(-1,1),new(0,-2),new(-1,-2)],
@@ -82,70 +85,68 @@ namespace TwoVTwoTris.Entities
                 [new(0,0), new(+1,0), new(-2,0), new(+1,-2), new(-2,+1)], // 2->R
                 [new(0,0), new(+2,0), new(-1,0), new(+2,+1), new(-1,-2)], // R->0
             };
+            int oldRotationState =  rotationState;
             rotationState += rotation;
-            for (int i = 0; i < piece.Length; i++)
+            // rotate counterclockwise
+            if (rotation < 0)
             {
-                // rotate counterclockwise
-                if (rotation < 0)
-                {
-                    //piece[i] += _rotations[0][rotationState % 4][i];
-                    int checks = 0;
+                int checks = 0;
 
-                    // iterate through each test
-                    for(int j = 0; j < 5; j++)
+                // iterate through each test
+                for(int j = 0; j < 5; j++)
+                {
+                    // iterate through each square of the tetrimino
+                    for(int k = 0; k < 4; k++)
                     {
-                        // iterate through each square of the tetrimino
-                        for(int k = 0; k < 4; k++)
+                        piece[k] += _rotations[0][rotationState % 4][k];
+                        piece[k] += pieceType ? modificationsCCI[oldRotationState][j] : modificationsCC[oldRotationState][j];
+                        //check if it is a possible locate, addiding to checks
+                        // if colliding with game object or out of bounds
+                        if ((gameB[piece[k].Y, piece[k].X] == 0) && piece[k].X < gameB.GetLength(1)&&piece[k].Y < gameB.Length&&piece[k].X > 0)
                         {
-                            piece[k] += modificationsCC[rotationState-1][j];
-                            //check if it is a possible locate, addiding to checks
-                            // if colliding with game object or out of bounds
-                            if ((gameB[piece[k].Y, piece[k].X] == 0) && (piece[k].X < gameB.GetLength(1)||piece[k].Y < gameB.Length))
-                            {
-                                checks++;
-                            }
-                        }
-                        if (checks == 4){
-                            break;
-                        } 
-                        else
-                        {
-                            checks = 0;
-                            piece = prevPiece;
+                            checks++;
                         }
                     }
-                }
-                // rotate clockwise
-                else if (rotation > 0)
-                {
-                    //piece[i] += _rotations[0][rotationState % 4][i];
-                    int checks = 0;
-
-                    // iterate through each test
-                    for(int j = 0; j < 5; j++)
+                    if (checks == 4){
+                        break;
+                    } 
+                    else
                     {
-                        // iterate through each square of the tetrimino
-                        for(int k = 0; k < 4; k++)
+                        checks = 0;
+                        piece = prevPiece;
+                    }
+                }
+            }
+            // rotate clockwise
+            else if (rotation > 0)
+            {
+                int checks = 0;
+
+                // iterate through each test
+                for(int j = 0; j < 5; j++)
+                {
+                    // iterate through each square of the tetrimino
+                    for(int k = 0; k < 4; k++)
+                    {
+                        piece[k] += _rotations[0][rotationState % 4][k];
+                        piece[k] += pieceType ? modificationsCWI[oldRotationState][j] : modificationsCW[oldRotationState][j];
+                        //check if it is a possible locate, addiding to checks
+                        // if colliding with game object or out of bounds
+                        if ((gameB[piece[k].Y, piece[k].X] == 0) && (piece[k].X < gameB.GetLength(1)||piece[k].Y < gameB.Length))
                         {
-                            piece[k] += modificationsCW[rotationState-1][j];
-                            //check if it is a possible locate, addiding to checks
-                            // if colliding with game object or out of bounds
-                            if ((gameB[piece[k].X, piece[k].Y] == 0) && (piece[k].X < gameB.GetLength(1)||piece[k].Y < gameB.Length))
-                            {
-                                checks++;
-                            }
-                        }
-                        if (checks == 4){
-                            break;
-                        } 
-                        else
-                        {
-                            checks = 0;
-                            piece = prevPiece;
+                            checks++;
                         }
                     }
-
+                    if (checks == 4){
+                        break;
+                    } 
+                    else
+                    {
+                        checks = 0;
+                        piece = prevPiece;
+                    }
                 }
+
             }
 
             if (rotationState > 3 || rotationState < 0)
