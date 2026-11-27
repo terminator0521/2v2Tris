@@ -7,7 +7,10 @@ namespace TwoVTwoTris.Entities
     static public class Tetromino
     {
         /*
-         * I piece:
+         * order from 0 - 6 for pieces under this list
+         * 
+         * 
+         * I piece: 
          * 0 0 0 1 1 1 1 0 0 0
          * 
          * O piece:
@@ -71,14 +74,18 @@ namespace TwoVTwoTris.Entities
         // Indecies -> Piece type | rotation State | kick offset tests
         readonly static public Point2D[][][] kicks =
         {
+            //order from 0 - 2 for pieces under this list.
+            //3x3 share the same kick tables i think so just have one array of tests for them
 
+            //first rotation state is always unrotated rememer that
+            //also Y is fliped so + is going down
         };
 
         static public void SetNewPiece(out Point2D[] piece, out int piecenum)
         {
             int i = 0;
             piece = (Point2D[])_origin[i].Clone();
-            piecenum = i; 
+            piecenum = i;
         }
 
         static public void ApplyRotation(ref int rotationState, ref Point2D[] piece, ref int[,] gameB, int rotation)
