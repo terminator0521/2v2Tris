@@ -40,7 +40,11 @@ namespace TwoVTwoTris.Entities
         {
             [new Point2D(3, 2), new Point2D(4, 2), new Point2D(5, 2), new Point2D(6, 2)], //i piece
             [new Point2D(4, 1), new Point2D(5, 1), new Point2D(4, 2), new Point2D(5, 2)], //o piece
+            [new Point2D(5, 1), new Point2D(3, 2), new Point2D(4, 2), new Point2D(5, 2)], //l piece
             [new Point2D(3, 1), new Point2D(3, 2), new Point2D(4, 2), new Point2D(5, 2)], //j piece
+            [new Point2D(4, 1), new Point2D(5, 1), new Point2D(3, 2), new Point2D(4, 2)], //s piece
+            [new Point2D(3, 1), new Point2D(4, 1), new Point2D(4, 2), new Point2D(5, 2)], //z piece
+            [new Point2D(4, 1), new Point2D(3, 2), new Point2D(4, 2), new Point2D(5, 2)], //t piece
         };
 
         //Indicies -> piece type | rotation state | block index
@@ -62,12 +66,40 @@ namespace TwoVTwoTris.Entities
                 [new(0, 0), new(0, 0), new(0, 0), new(0, 0)],
                 [new(0, 0), new(0, 0), new(0, 0), new(0, 0)],
             ],
-            //3 x 3 matrix pieces 
+            //L piece
+            [
+                [new(2, 0), new(-1, -1), new(0, 0), new(1, 1)],
+                [new(0, 2), new(1, -1), new(0, 0), new(-1, 1)],
+                [new(-2, 0), new(1, 1), new(0, 0), new(-1, -1)],
+                [new(0, -2), new(-1, 1), new(0, 0), new(1, -1)],
+            ],
+            //J pieces 
             [
                 [new(0, -2), new(-1, -1), new(0, 0), new(1, 1)],
                 [new(2, 0), new(1, -1), new(0, 0), new(-1, 1)],
                 [new(0, 2), new(1, 1), new(0, 0), new(-1, -1)],
                 [new(-2, 0), new(-1, 1), new(0, 0), new(1, -1)],
+            ],
+            //S piece
+            [
+                [new(1, -1), new(2, 0), new(-1, -1), new(0, 0)],
+                [new(1, 1), new(0, 2), new(1, -1), new(0, 0)],
+                [new(-1, 1), new(-2, 0), new(1, 1), new(0, 0)],
+                [new(-1, -1), new(0, -2), new(-1, 1), new(0, 0)],
+            ],
+            //Z piece
+            [
+                [new(0, 0), new(0, 0), new(0, 0), new(0, 0)],
+                [new(2, 0), new(1, 1), new(0, 0), new(-1, 1)],
+                [new(0, 2), new(-1, 1), new(0, 0), new(-1, -1)],
+                [new(-2, 0), new(-1, -1), new(0, 0), new(1, -1)],
+            ],
+            //T piece
+            [
+                [new(1, -1), new(-1, -1), new(0, 0), new(1, 1)],
+                [new(1, 1), new(1, -1), new(0, 0), new(-1, 1)],
+                [new(-1, 1), new(1, 1), new(0, 0), new(-1, -1)],
+                [new(-1, -1), new(-1, 1), new(0, 0), new(1, -1)],
             ],
         };
 
@@ -79,9 +111,9 @@ namespace TwoVTwoTris.Entities
 
         static public void SetNewPiece(out Point2D[] piece, out int piecenum)
         {
-            int i = 2;
+            int i = 6;
             piece = (Point2D[])_origin[i].Clone();
-            piecenum = i; 
+            piecenum = i;
         }
 
         static public void ApplyRotation(ref int rotationState, ref Point2D[] piece, ref int[,] gameB, int rotation)
