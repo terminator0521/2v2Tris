@@ -10,11 +10,25 @@ namespace TwoVTwoTris.Core
         internal int Score { get; private set; }
         private Rectangle _board;
         private int _tileSize;
-        private Point2D[] _previousPiecePos = new Point2D[4];
-        private Point2D[] _piecePos = new Point2D[4];
         private float _dropTime = 0.2f;
         private float _dropTimeWaited = 0f;
+
+
+        private enum PieceNum
+        {
+            I = 0,
+            O = 1,
+            J = 2,
+            L = 3,
+            S = 4,
+            Z = 5,
+            T = 6,
+
+        }
+        private int _currentPieceNum = 0;
         private int _pieceRotationState = 0;
+        private Point2D[] _previousPiecePos = new Point2D[4];
+        private Point2D[] _piecePos = new Point2D[4];
 
 
         //internal game board matrix
@@ -201,6 +215,7 @@ namespace TwoVTwoTris.Core
                 ApplyRotation(-1);
             }
         }
+        
         private void ApplyRotation(int rotation)
         {
             _pieceRotationState += rotation;
@@ -222,7 +237,7 @@ namespace TwoVTwoTris.Core
         }
         private void SetNewPiece()
         {
-            Tetromino.SetNewPiece(out _piecePos);
+            Tetromino.SetNewPiece(out _piecePos, out _currentPieceNum);
         }
 
         private void UndoMove()
