@@ -70,8 +70,8 @@ namespace TwoVTwoTris.Core
             _board = rect;
             _tileSize = tileSize;
             //set stuff
-            Tetromino.SetNewPiece(out _piecePos);
-            Tetromino.SetNewPiece(out _previousPiecePos);
+            Tetromino.SetNewPiece(out _piecePos, out _currentPieceNum);
+            Tetromino.SetNewPiece(out _previousPiecePos, out _currentPieceNum);
             //clone gameboard
             currentGameBoard = (int[,])_realGameBoard.Clone();
         }
