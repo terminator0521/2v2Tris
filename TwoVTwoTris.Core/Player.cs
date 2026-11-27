@@ -215,24 +215,27 @@ namespace TwoVTwoTris.Core
                 ApplyRotation(-1);
             }
         }
-        
+
         private void ApplyRotation(int rotation)
         {
-            _pieceRotationState += rotation;
+            _pieceRotationState += rotation; //change rotation
+
+            if (_pieceRotationState > 3 || _pieceRotationState < 0) //clamp
+            {
+                _pieceRotationState = (_pieceRotationState + 4) % 4;
+            }
+            Point2D[] newPiecePos = (Point2D[])_piecePos.Clone(); //create a copy for new positions
+
             for (int i = 0; i < _piecePos.Length; i++)
             {
                 if (rotation < 0)
                 {
-                    _piecePos[i] -= Tetromino.rotations[0][((_pieceRotationState + 1) + 4) % 4][i];
+                    _piecePos[i] -= Tetromino.rotations[_currentPieceNum][((_pieceRotationState + 1) + 4) % 4][i];
                 }
                 else if (rotation > 0)
                 {
-                    _piecePos[i] += Tetromino.rotations[0][_pieceRotationState % 4][i];
+                    _piecePos[i] += Tetromino.rotations[_currentPieceNum][_pieceRotationState % 4][i];
                 }
-            }
-            if (_pieceRotationState > 3 || _pieceRotationState < 0)
-            {
-                _pieceRotationState = (_pieceRotationState + 4) % 4;
             }
         }
         private void SetNewPiece()

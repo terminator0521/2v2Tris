@@ -40,11 +40,7 @@ namespace TwoVTwoTris.Entities
         {
             [new Point2D(3, 2), new Point2D(4, 2), new Point2D(5, 2), new Point2D(6, 2)], //i piece
             [new Point2D(4, 1), new Point2D(5, 1), new Point2D(4, 2), new Point2D(5, 2)], //o piece
-            [new Point2D(3, 1), new Point2D(3, 2), new Point2D(4, 2), new Point2D(5, 2)], //l piece
-            [new Point2D(5, 1), new Point2D(3, 2), new Point2D(4, 2), new Point2D(5, 2)], //j piece
-            [new Point2D(4, 1), new Point2D(5, 1), new Point2D(3, 2), new Point2D(4, 2)], //s piece
-            [new Point2D(3, 1), new Point2D(4, 1), new Point2D(4, 2), new Point2D(5, 2)], //z piece
-            [new Point2D(4, 1), new Point2D(3, 2), new Point2D(4, 2), new Point2D(5, 2)], //z piece
+            [new Point2D(3, 1), new Point2D(3, 2), new Point2D(4, 2), new Point2D(5, 2)], //j piece
         };
 
         //Indicies -> piece type | rotation state | block index
@@ -66,6 +62,13 @@ namespace TwoVTwoTris.Entities
                 [new(0, 0), new(0, 0), new(0, 0), new(0, 0)],
                 [new(0, 0), new(0, 0), new(0, 0), new(0, 0)],
             ],
+            //3 x 3 matrix pieces 
+            [
+                [new(0, -2), new(-1, -1), new(0, 0), new(1, 1)],
+                [new(2, 0), new(1, -1), new(0, 0), new(-1, 1)],
+                [new(0, 2), new(1, 1), new(0, 0), new(-1, -1)],
+                [new(-2, 0), new(-1, 1), new(0, 0), new(1, -1)],
+            ],
         };
 
         // Indecies -> Piece type | rotation State | kick offset tests
@@ -76,7 +79,7 @@ namespace TwoVTwoTris.Entities
 
         static public void SetNewPiece(out Point2D[] piece, out int piecenum)
         {
-            int i = 0;
+            int i = 2;
             piece = (Point2D[])_origin[i].Clone();
             piecenum = i; 
         }
